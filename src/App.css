@@ -1,177 +1,192 @@
-/* General App */
-
-.App {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    background-color: #0a192f;
-    color: #ccd6f6;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
 
 /* Navbar */
-
 .Navbar {
-    width: 100%;
-    background-color: #112240;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.95);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .Navbar a {
-    color: #64ffda;
-    text-decoration: none;
-    font-weight: bold;
+  color: #f1f5f9;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 .Navbar a:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  color: #38bdf8;
 }
 
-
-/* Smooth scroll */
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-/* Home Section */
-
+/* Header (Home Section) */
 .App-header {
-    max-width: 600px;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+.App-logo {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  border: 4px solid #38bdf8;
+  margin-bottom: 1.5rem;
+  transition: transform 0.5s;
+}
+
+.App-logo:hover {
+  transform: scale(1.05);
 }
 
 .App-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #64ffda;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .App-header p {
-    font-size: 1.2rem;
-    margin-top: 5px;
-    line-height: 1.5;
+  font-size: 1.2rem;
+  color: #94a3b8;
 }
-
-.App-header img {
-    width: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 4px solid #64ffda;
-}
-
 
 /* Projects Section */
-
 .Projects {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #112240;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: #1e293b;
 }
 
 .Projects h2 {
-    color: #64ffda;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #38bdf8;
 }
 
 .Projects ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.Projects li {
-    margin: 10px 0;
-    font-size: 1.2rem;
+  list-style: none;
 }
 
 .project-link {
-    color: #64ffda;
-    text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .project-link:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  background-color: #0ea5e9;
+  transform: translateY(-2px);
 }
 
-
 /* About Section */
-
 .About {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #0a192f;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+  padding: 5rem 2rem;
+  background-color: #0f172a;
+  text-align: center;
 }
 
 .About h2 {
-    color: #64ffda;
-    margin-bottom: 20px;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
+.About p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #94a3b8;
+  line-height: 1.7;
+}
 
 /* Contact Section */
-
 .Contact {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #112240;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    color: #ccd6f6;
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: #1e293b;
 }
 
 .Contact h2 {
-    color: #64ffda;
-    margin-bottom: 20px;
+  color: #38bdf8;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Contact p {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
 }
 
 .Contact ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.Contact li {
-    margin: 10px 0;
-    font-size: 1.1rem;
+  list-style: none;
 }
 
 .contact-link {
-    color: #64ffda;
-    text-decoration: none;
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .contact-link:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  color: #0ea5e9;
+}
+
+/* Footer (Optional) */
+footer {
+  background-color: #0f172a;
+  text-align: center;
+  padding: 1rem;
+  color: #64748b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Navbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .App-header h1 {
+    font-size: 2rem;
+  }
+
+  .Projects, .About, .Contact {
+    padding: 3rem 1rem;
+  }
+
+  .project-link {
+    width: 80%;
+  }
 }
