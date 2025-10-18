@@ -75,9 +75,10 @@ function App() {
         <h2>Contact Me</h2>
         <p>You can reach me via email or social media:</p>
         <ul>
-          <li>Email: <a href="surajkharade000@gmail.com" className="contact-link">suraj@example.com</a></li>
-          <li>Instagram: <a href="https://www.instagram.com/x.suraj__18?igsh=MjQ0MG43cmtsZmQw" target="_blank" rel="noopener noreferrer" className="contact-link">surajkharade</a></li>
-          <li>youtube: <a href="https://youtube.com/@surajjediting?si=GE2jJcv8xB1yNi7q" target="_blank" rel="noopener noreferrer" className="contact-link">yourgithub</a></li>
+          <li>Email: <a href="surajkharade000@gmail.com" className="contact-link">surajkharade000@gmail.com</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/x.suraj__18?igsh=MjQ0MG43cmtsZmQw" target="_blank" rel="noopener noreferrer" className="contact-link">x.suraj__18</a></li>
+          <li>youtube: <a href="https://youtube.com/@surajjediting?si=GE2jJcv8xB1yNi7q" target="_blank" rel="noopener noreferrer" className="contact-link">Youtube</a></li>
+          <li>youtube: <a href="9767774450" target="_blank" rel="noopener noreferrer" className="contact-link">9767774450</a></li>
         </ul>
       </section>
 
