@@ -15,11 +15,14 @@ function App() {
 
       {/* Home Section */}
       <header id="home" className="App-header">
-        <img
-          src="https://i.postimg.cc/1tHS3fJ1/59993AE2-2E20-4810-93B3-F7285015B6F5.png"
-          alt="Suraj Kharade"
-          className="App-logo"
-        />
+        <div className="logo-container">
+          <img
+            src="https://i.postimg.cc/1tHS3fJ1/59993AE2-2E20-4810-93B3-F7285015B6F5.png"
+            alt="Suraj Kharade"
+            className="App-logo"
+          />
+          <div className="logo-glow"></div>
+        </div>
         <h1>Suraj Kharade</h1>
         <p>Video Editor | Support Engineer | Creative Thinker</p>
       </header>
@@ -50,7 +53,7 @@ function App() {
           </li>
           <li>
             <a 
-              href="link"
+              href="https://drive.google.com/drive/folders/1rirlcByJ7K2qcU5XCgY8MbBgCwJKiBi3?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
