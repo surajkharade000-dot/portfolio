@@ -16,7 +16,7 @@ function App() {
       {/* Home Section */}
       <header id="home" className="App-header">
         <img
-          src="https://drive.google.com/uc?export=view&id=1YU-yN7dvzQuFMzzRNbiuM5vfCjGpnbdB"
+          src="https://drive.google.com/file/d/1YU-yN7dvzQuFMzzRNbiuM5vfCjGpnbdB/view?usp=sharing"
           alt="Suraj Kharade"
           className="App-logo"
         />
