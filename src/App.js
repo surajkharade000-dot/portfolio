@@ -4,7 +4,6 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-
       {/* Navbar */}
       <nav className="Navbar">
         <a href="#home">Home</a>
@@ -18,13 +17,14 @@ function App() {
         <div className="logo-container">
           <img
             src="https://i.postimg.cc/1tHS3fJ1/59993AE2-2E20-4810-93B3-F7285015B6F5.png"
-            alt="Suraj Kharade"
+            alt="Suraj Kharade Logo"
             className="App-logo"
           />
-          <div className="logo-glow"></div>
+          <div className="glow"></div>
         </div>
+
         <h1>Suraj Kharade</h1>
-        <p>Video Editor | Support Engineer | Creative Thinker</p>
+        <p>Video Editing Professional | Support Engineer | Creative Thinker</p>
       </header>
 
       {/* Projects Section */}
@@ -32,7 +32,7 @@ function App() {
         <h2>My Projects</h2>
         <ul>
           <li>
-            <a 
+            <a
               href="https://drive.google.com/file/d/1auKON7EGxGNR8pch2nTxTHxtymt8QxzL/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
@@ -42,7 +42,7 @@ function App() {
             </a>
           </li>
           <li>
-            <a 
+            <a
               href="https://drive.google.com/drive/folders/1rirlcByJ7K2qcU5XCgY8MbBgCwJKiBi3?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
@@ -52,8 +52,8 @@ function App() {
             </a>
           </li>
           <li>
-            <a 
-              href="https://drive.google.com/drive/folders/1rirlcByJ7K2qcU5XCgY8MbBgCwJKiBi3?usp=sharing"
+            <a
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -68,29 +68,63 @@ function App() {
       <section id="about" className="About">
         <h2>About Me</h2>
         <p>
-          I'm a web developer with experience in React, JavaScript, and modern web technologies.
-          I love creating clean, responsive, and user-friendly websites.
+          I'm a passionate video editor and support engineer who loves blending
+          technology with creativity. My focus is to make cinematic, clean, and
+          emotionally powerful visuals.
         </p>
       </section>
 
       {/* Contact Section */}
       <section id="contact" className="Contact">
         <h2>Contact Me</h2>
-        <p>You can reach me via email or social media:</p>
+        <p>Let's connect — feel free to reach out anytime!</p>
         <ul>
-          <li>Email: <a href="mailto:surajkharade000@gmail.com" className="contact-link">surajkharade000@gmail.com</a></li>
-          <li>Instagram: <a href="https://www.instagram.com/x.suraj__18?igsh=MjQ0MG43cmtsZmQw" target="_blank" rel="noopener noreferrer" className="contact-link">x.suraj__18</a></li>
-          <li>YouTube: <a href="https://youtube.com/@surajjediting?si=GE2jJcv8xB1yNi7q" target="_blank" rel="noopener noreferrer" className="contact-link">Youtube</a></li>
-          <li>Mobile: <a href="tel:+919767774450" className="contact-link">+91 97677 74450</a></li>
+          <li>
+            Email:{" "}
+            <a
+              href="mailto:surajkharade000@gmail.com"
+              className="contact-link"
+            >
+              surajkharade000@gmail.com
+            </a>
+          </li>
+          <li>
+            Instagram:{" "}
+            <a
+              href="https://www.instagram.com/x.suraj__18?igsh=MjQ0MG43cmtsZmQw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+            >
+              x.suraj__18
+            </a>
+          </li>
+          <li>
+            YouTube:{" "}
+            <a
+              href="https://youtube.com/@surajjediting?si=GE2jJcv8xB1yNi7q"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+            >
+              YouTube Channel
+            </a>
+          </li>
+          <li>
+            Mobile:{" "}
+            <a href="tel:+919767774450" className="contact-link">
+              +91 97677 74450
+            </a>
+          </li>
         </ul>
-        <a 
-          href="https://drive.google.com/uc?export=download&id=1zxMILz3SC9wwOyVlTw15T9nHvppbWmvQ" 
+
+        <a
+          href="https://drive.google.com/uc?export=download&id=1zxMILz3SC9wwOyVlTw15T9nHvppbWmvQ"
           className="resume-btn"
         >
           Download Resume
         </a>
       </section>
-
     </div>
   );
 }
