@@ -16,8 +16,8 @@ function App() {
       {/* Home Section */}
       <header id="home" className="App-header">
         <img
-          src="https://via.placeholder.com/200"
-          alt="Profile"
+          src="https://drive.google.com/uc?export=view&id=1YU-yN7dvzQuFMzzRNbiuM5vfCjGpnbdB"
+          alt="Suraj Kharade"
           className="App-logo"
         />
         <h1>Suraj Kharade</h1>
@@ -55,7 +55,7 @@ function App() {
               rel="noopener noreferrer"
               className="project-link"
             >
-              traditional video
+              Traditional Video
             </a>
           </li>
         </ul>
@@ -77,10 +77,10 @@ function App() {
         <ul>
           <li>Email: <a href="mailto:surajkharade000@gmail.com" className="contact-link">surajkharade000@gmail.com</a></li>
           <li>Instagram: <a href="https://www.instagram.com/x.suraj__18?igsh=MjQ0MG43cmtsZmQw" target="_blank" rel="noopener noreferrer" className="contact-link">x.suraj__18</a></li>
-          <li>youtube: <a href="https://youtube.com/@surajjediting?si=GE2jJcv8xB1yNi7q" target="_blank" rel="noopener noreferrer" className="contact-link">Youtube</a></li>
+          <li>YouTube: <a href="https://youtube.com/@surajjediting?si=GE2jJcv8xB1yNi7q" target="_blank" rel="noopener noreferrer" className="contact-link">Youtube</a></li>
           <li>Mobile: <a href="tel:+919767774450" className="contact-link">+91 97677 74450</a></li>
-          <a href="/Suraj-Kharade-Resume.pdf" download className="resume-btn">Download Resume</a>
         </ul>
+        <a href="/Suraj-Kharade-Resume.pdf" download className="resume-btn">Download Resume</a>
       </section>
 
     </div>
