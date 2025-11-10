@@ -52,14 +52,13 @@ function App() {
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => alert("Traditional Video link coming soon!")}
               className="project-link"
+              style={{ cursor: "pointer", border: "none" }}
             >
               Traditional Video
-            </a>
+            </button>
           </li>
         </ul>
       </section>
