@@ -55,7 +55,7 @@ function App() {
               rel="noopener noreferrer"
               className="project-link"
             >
-              tradditional video
+              traditional video
             </a>
           </li>
         </ul>
@@ -79,6 +79,7 @@ function App() {
           <li>Instagram: <a href="https://www.instagram.com/x.suraj__18?igsh=MjQ0MG43cmtsZmQw" target="_blank" rel="noopener noreferrer" className="contact-link">x.suraj__18</a></li>
           <li>youtube: <a href="https://youtube.com/@surajjediting?si=GE2jJcv8xB1yNi7q" target="_blank" rel="noopener noreferrer" className="contact-link">Youtube</a></li>
           <li>Mobile: <a href="tel:+919767774450" className="contact-link">+91 97677 74450</a></li>
+          <a href="/Suraj-Kharade-Resume.pdf" download className="resume-btn">Download Resume</a>
         </ul>
       </section>
 
