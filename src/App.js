@@ -30,7 +30,7 @@ function App() {
         <ul>
           <li>
             <a 
-              href="https://youtu.be/yourVideoLink"
+              href="https://drive.google.com/file/d/1auKON7EGxGNR8pch2nTxTHxtymt8QxzL/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -40,7 +40,7 @@ function App() {
           </li>
           <li>
             <a 
-              href="https://drive.google.com/file/d/1X0I0rdiI3HT03Kjg11PjjffscwI_RYwj/view?usp=sharing"
+              href="https://drive.google.com/drive/folders/1rirlcByJ7K2qcU5XCgY8MbBgCwJKiBi3?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -50,12 +50,12 @@ function App() {
           </li>
           <li>
             <a 
-              href="https://yourEcommerceLink.com"
+              href="link"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
-              E-commerce Web App
+              tradditional video
             </a>
           </li>
         </ul>
@@ -78,7 +78,7 @@ function App() {
           <li>Email: <a href="surajkharade000@gmail.com" className="contact-link">surajkharade000@gmail.com</a></li>
           <li>Instagram: <a href="https://www.instagram.com/x.suraj__18?igsh=MjQ0MG43cmtsZmQw" target="_blank" rel="noopener noreferrer" className="contact-link">x.suraj__18</a></li>
           <li>youtube: <a href="https://youtube.com/@surajjediting?si=GE2jJcv8xB1yNi7q" target="_blank" rel="noopener noreferrer" className="contact-link">Youtube</a></li>
-          <li>youtube: <a href="9767774450" target="_blank" rel="noopener noreferrer" className="contact-link">9767774450</a></li>
+          <li>mobile no: <a href="9767774450" target="_blank" rel="noopener noreferrer" className="contact-link">9767774450</a></li>
         </ul>
       </section>
 
