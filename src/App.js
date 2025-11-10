@@ -80,7 +80,12 @@ function App() {
           <li>YouTube: <a href="https://youtube.com/@surajjediting?si=GE2jJcv8xB1yNi7q" target="_blank" rel="noopener noreferrer" className="contact-link">Youtube</a></li>
           <li>Mobile: <a href="tel:+919767774450" className="contact-link">+91 97677 74450</a></li>
         </ul>
-        <a href="/Suraj-Kharade-Resume.pdf" download className="resume-btn">Download Resume</a>
+        <a 
+          href="https://drive.google.com/uc?export=download&id=1zxMILz3SC9wwOyVlTw15T9nHvppbWmvQ" 
+          className="resume-btn"
+        >
+          Download Resume
+        </a>
       </section>
 
     </div>
