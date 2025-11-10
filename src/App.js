@@ -79,10 +79,20 @@ function App() {
       {/* ℹ️ About Section */}
       <section id="about" className="About">
         <h2>About Me</h2>
-        <p>
-          I'm a passionate video editor and support engineer who loves blending
-          technology with creativity. My focus is to make cinematic, clean, and
-          emotionally powerful visuals.
+        <p> 
+          Name: सुरज खराडे – एक experienced Cinematic Video Editor.
+          Skills: Adobe Premiere Pro, CapCut , कलर ग्रेडिंग.
+          Specialization / विशेषत:
+          सिनेमॅटिक व्हिडिओ / Cinematic Videos
+          विवाह / प्री-वेडिंग टीझर्स / Wedding & Pre-Wedding Teasers
+          पारंपरिक हायलाइट्स / Traditional Highlights
+          प्रमोशनल / सोशल मीडिया व्हिडिओ / Promotional & Social Media Videos
+          अनुभव / Experience: Cinematic video editing आणि सर्व प्रकारची video editing केली आहे.
+          कामाची शैली / Work Style: नेमके संपादन, cinematic touch, आणि प्रेक्षकांसाठी immersive experience तयार करणे.
+          शिकण्याची वृत्ती / Learning Approach: सतत नवीन techniques शिकणे आणि creative राहणे.
+          क्रिएटिव्ह आवड / Creative Interests: नवीन styles experiment करणे, editing tips share करणे, visuals अधिक engaging बनवणे.
+          उद्देश / Goal: असा content तयार करणे जो सुंदर दिसत असेल आणि प्रेक्षकांच्या भावना स्पर्श करेल.
+          संपर्क / Contact: माझे portfolio पहा आणि प्रोजेक्टवर collaborate करायचे असल्यास contact करा.
         </p>
       </section>
 
