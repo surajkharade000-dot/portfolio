@@ -137,7 +137,7 @@ function App() {
 
         {/* 📄 Resume Download Button */}
         <a
-          href="https://drive.google.com/uc?export=download&id=1zxMILz3SC9wwOyVlTw15T9nHvppbWmvQ"
+          href="https://drive.google.com/file/d/1VqPTle46ViXd0sVt1k84-o9qOi8pFEhJ/view?usp=sharing"
           className="resume-btn"
         >
           Download Resume
