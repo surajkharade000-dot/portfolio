@@ -68,10 +68,11 @@ function App() {
 
           {/* Traditional Video */}
           <li>
-            <button
-              onClick={() => alert("Traditional Video link coming soon!")}
+              <a
+              href="https://drive.google.com/file/d/1BfrkEU5Duna2wDoJX3vOtNH7jUQN_jSc/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="project-link"
-              style={{ cursor: "pointer", border: "none" }}
             >
               Traditional Video
             </button>
