@@ -1,4 +1,4 @@
-/* 🌍 सर्व elements साठी बेसिक सेटिंग (margin, padding reset आणि font set) */
+/* 🌍 Full Reset + Default Font */
 * {
   margin: 0;
   padding: 0;
@@ -6,34 +6,33 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* पेज स्क्रोल स्मूथ करायला */
+/* Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* वेबसाईटचा मुख्य पार्श्वभूमी रंग आणि टेक्स्ट रंग */
+/* Background + Text Color */
 body {
-  background-color: #0d0d0d; /* काळी background */
-  color: #e0c070; /* सोनेरी टेक्स्ट */
-  overflow-x: hidden; /* डावीकडून उजवीकडे स्क्रोल होऊ नये म्हणून */
+  background-color: #0d0d0d;
+  color: #e0c070;
+  overflow-x: hidden;
 }
 
-/* 🟡 Navbar विभाग */
+/* 🟡 Navbar */
 .Navbar {
-  position: fixed; /* वर कायम राहण्यासाठी */
+  position: fixed;
   top: 0;
-  width: 100%; /* संपूर्ण स्क्रीन व्यापते */
-  background: rgba(13, 13, 13, 0.9); /* थोडा पारदर्शक काळा रंग */
+  width: 100%;
+  background: rgba(13, 13, 13, 0.9);
   display: flex;
   justify-content: center;
   gap: 2rem;
   padding: 1rem;
-  z-index: 100; /* इतर सगळ्यांच्या वर दिसेल */
+  z-index: 100;
   border-bottom: 1px solid rgba(255, 215, 0, 0.2);
-  backdrop-filter: blur(6px); /* ब्लर इफेक्ट */
+  backdrop-filter: blur(6px);
 }
 
-/* Navbar मधल्या लिंकची रचना */
 .Navbar a {
   color: #e0c070;
   text-decoration: none;
@@ -41,14 +40,13 @@ body {
   transition: 0.3s;
 }
 
-/* Hover केल्यावर रंग बदल */
 .Navbar a:hover {
   color: #ffd700;
 }
 
-/* 🏠 Header विभाग (Home Section) */
+/* 🏠 Header (Home Section) */
 .App-header {
-  height: 100vh; /* पूर्ण स्क्रीन उंची */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,28 +56,26 @@ body {
   background: radial-gradient(circle at center, #1a1a1a, #000);
 }
 
-/* 🔆 लोगोचा कंटेनर */
+/* Logo Container */
 .logo-container {
   position: relative;
   display: inline-block;
 }
 
-/* लोगोचे आकार, शेडो, अ‍ॅनिमेशन */
+/* Logo Styling */
 .App-logo {
   width: 200px;
-  height: auto;
   border-radius: 10px;
   transition: transform 0.6s ease, filter 0.5s ease;
   filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.4));
 }
 
-/* Hover केल्यावर लोगो थोडा मोठा होतो आणि अधिक तेजस्वी दिसतो */
 .App-logo:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 0 35px rgba(255, 215, 0, 0.8));
 }
 
-/* लोगो मागे दिसणारा हलका ग्लो इफेक्ट */
+/* Golden Glow */
 .glow {
   position: absolute;
   top: 50%;
@@ -92,7 +88,7 @@ body {
   animation: pulse 4s infinite ease-in-out;
 }
 
-/* Glow साठी अ‍ॅनिमेशन — हळूहळू मोठं आणि लहान होत राहतं */
+/* Glow Animation */
 @keyframes pulse {
   0%, 100% {
     opacity: 0.6;
@@ -104,7 +100,7 @@ body {
   }
 }
 
-/* नाव आणि प्रोफेशन टेक्स्ट */
+/* Header Text */
 .App-header h1 {
   font-size: 2.8rem;
   color: #e0c070;
@@ -115,42 +111,52 @@ body {
   color: #a38f56;
   font-size: 1.2rem;
   margin-top: 0.5rem;
+  line-height: 1.6;
 }
 
-/* 🎬 Projects विभाग */
+/* 🎬 Projects Section */
 .Projects {
   background-color: #121212;
   padding: 5rem 2rem;
   text-align: center;
 }
 
-/* प्रोजेक्ट्सचे शीर्षक */
 .Projects h2 {
   color: #ffd700;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
-/* प्रत्येक प्रोजेक्ट बटण/लिंक */
+/* Remove default list dots */
+.Projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Add spacing between list items */
+.Projects li {
+  margin: 10px 0;
+}
+
+/* Project Buttons / Links */
 .project-link {
   display: inline-block;
   background: linear-gradient(135deg, #e0c070, #ffd700);
   color: #121212;
   text-decoration: none;
   font-weight: 600;
-  margin: 10px;
-  padding: 10px 25px;
+  padding: 12px 25px;
   border-radius: 8px;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
-/* Hover केल्यावर प्रोजेक्ट लिंक थोडी वर उचलते */
 .project-link:hover {
   transform: translateY(-3px);
   background: #ffde5d;
 }
 
-/* ℹ️ About विभाग */
+/* ℹ️ About Section */
 .About {
   background-color: #0d0d0d;
   text-align: center;
@@ -163,15 +169,15 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* About paragraph चे स्टाइल */
 .About p {
   color: #b8a162;
   max-width: 700px;
-  margin: 0 auto;
+  margin: auto;
   line-height: 1.6;
+  font-size: 1.05rem;
 }
 
-/* 📞 Contact विभाग */
+/* 📞 Contact Section */
 .Contact {
   background-color: #121212;
   text-align: center;
@@ -181,28 +187,30 @@ body {
 .Contact h2 {
   color: #ffd700;
   font-size: 2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-/* संपर्क माहितीची यादी */
 .Contact ul {
   list-style: none;
   margin-top: 1rem;
 }
 
-/* ईमेल, इंस्टाग्राम इत्यादी लिंक */
+.Contact li {
+  margin: 8px 0;
+  font-size: 1.05rem;
+}
+
 .contact-link {
   color: #e0c070;
   text-decoration: none;
   transition: 0.3s;
 }
 
-/* Hover वर लिंक अधिक सोनेरी होते */
 .contact-link:hover {
   color: #ffd700;
 }
 
-/* 📄 Resume बटण */
+/* Resume Button */
 .resume-btn {
   display: inline-block;
   margin-top: 2rem;
@@ -213,16 +221,15 @@ body {
   font-weight: 700;
   text-decoration: none;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-  transition: all 0.4s ease;
+  transition: 0.4s ease;
 }
 
-/* Hover वर थोडं वर उचलतं आणि जास्त चमकदार होतं */
 .resume-btn:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
 }
 
-/* 📱 मोबाईल साठी responsive स्टाइल */
+/* 📱 Mobile Responsive */
 @media (max-width: 768px) {
   .App-logo {
     width: 160px;
