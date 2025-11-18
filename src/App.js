@@ -1,16 +1,16 @@
-// React इम्पोर्ट केला — म्हणजे JSX (HTML सारखा कोड) वापरता येतो
+// React इम्पोर्ट
 import React from "react";
 
-// App.css ही बाहेरची स्टाइल फाइल जोडली
+// CSS फाइल
 import "./App.css";
 
-// App हा मुख्य कॉम्पोनेंट (आपली संपूर्ण वेबसाइट या कॉम्पोनेंटमध्ये आहे)
+// मुख्य App Component
 function App() {
   return (
     <div className="App">
-      {/* 🟡 Navbar विभाग */}
+
+      {/* 🟡 Navbar */}
       <nav className="Navbar">
-        {/* या लिंक स्क्रोल करून पेजच्या त्या त्या सेक्शनकडे नेतात */}
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
@@ -19,39 +19,42 @@ function App() {
 
       {/* 🏠 Home Section */}
       <header id="home" className="App-header">
-        {/* लोगो आणि glow इफेक्ट */}
+
         <div className="logo-container">
           <img
             src="https://i.postimg.cc/1tHS3fJ1/59993AE2-2E20-4810-93B3-F7285015B6F5.png"
             alt="Suraj Kharade Logo"
             className="App-logo"
           />
-          {/* हा div glow इफेक्टसाठी आहे */}
           <div className="glow"></div>
         </div>
 
-        {/* नाव आणि प्रोफेशन */}
         <h1>Suraj Kharade</h1>
-        <p>Video Editing Professional | Support Engineer | Creative Thinker</p>
+        <p>
+          Video Editing Professional <br />
+          Support Engineer <br />
+          Creative Thinker
+        </p>
       </header>
 
       {/* 🎬 Projects Section */}
       <section id="projects" className="Projects">
         <h2>My Projects</h2>
+
         <ul>
-          {/* पहिला प्रोजेक्ट — Cinematic Video */}
+          {/* Cinematic Video */}
           <li>
             <a
               href="https://drive.google.com/file/d/1auKON7EGxGNR8pch2nTxTHxtymt8QxzL/view?usp=drive_link"
-              target="_blank" // लिंक नवीन टॅबमध्ये उघडते
-              rel="noopener noreferrer" // सुरक्षिततेसाठी
+              target="_blank"
+              rel="noopener noreferrer"
               className="project-link"
             >
               Cinematic Video
             </a>
           </li>
 
-          {/* दुसरा प्रोजेक्ट — Teaser */}
+          {/* Teaser */}
           <li>
             <a
               href="https://drive.google.com/drive/folders/1rirlcByJ7K2qcU5XCgY8MbBgCwJKiBi3?usp=sharing"
@@ -63,7 +66,7 @@ function App() {
             </a>
           </li>
 
-          {/* तिसरा प्रोजेक्ट — अजून लिंक नाही, पण बटण क्लिक केल्यावर अलर्ट येतो */}
+          {/* Traditional Video */}
           <li>
             <button
               onClick={() => alert("Traditional Video link coming soon!")}
@@ -73,46 +76,51 @@ function App() {
               Traditional Video
             </button>
           </li>
+
+          {/* Marathi Prewedding Song */}
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1_8zZAOmm5ga1lj3G2FKuQu34nnXbwBKk/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              Marathi Prewedding Song
+            </a>
+          </li>
         </ul>
       </section>
 
       {/* ℹ️ About Section */}
       <section id="about" className="About">
         <h2>About Me</h2>
-        <p> 
-          Name: सुरज खराडे – एक experienced Cinematic Video Editor.<br />
-        
-          Skills: Adobe Premiere Pro, CapCut , कलर ग्रेडिंग.<br />
-        
-          Specialization : Cinematic Videos /Wedding & Pre-Wedding Teasers / Traditional Highlights / Promotional & Social Media Videos<br />
 
-          Experience : Cinematic video editing आणि सर्व प्रकारची video editing केली आहे.<br />
-            
-          Work Style: नेमके संपादन, cinematic touch, आणि प्रेक्षकांसाठी immersive experience तयार करणे.<br />
-            
-          Learning Approach: सतत नवीन techniques शिकणे आणि creative राहणे.<br />
-            
-          Creative Interests: नवीन styles experiment करणे, editing tips share करणे, visuals अधिक engaging बनवणे.<br />
-            
-          Goal: असा content तयार करणे जो सुंदर दिसत असेल आणि प्रेक्षकांच्या भावना स्पर्श करेल.<br />
-            
-          संपर्क / Contact: माझे portfolio पहा आणि प्रोजेक्टवर collaborate करायचे असल्यास contact करा.<br />
+        <p>
+          Name: सुरज खराडे – एक experienced Cinematic Video Editor. <br /><br />
+          Skills: Adobe Premiere Pro, CapCut, कलर ग्रेडिंग. <br /><br />
+          Specialization: Cinematic Videos / Wedding & Pre-Wedding Teasers /
+          Traditional Highlights / Promotional & Social Media Videos <br /><br />
+          Experience: Cinematic video editing आणि सर्व प्रकारची video editing केली आहे. <br /><br />
+          Work Style: नेमके संपादन, cinematic touch, आणि प्रेक्षकांसाठी immersive experience तयार करणे. <br /><br />
+          Learning Approach: सतत नवीन techniques शिकणे आणि creative राहणे. <br /><br />
+          Creative Interests: नवीन styles experiment करणे, editing tips share करणे, visuals अधिक engaging बनवणे. <br /><br />
+          Goal: असा content तयार करणे जो सुंदर दिसत असेल आणि प्रेक्षकांच्या भावना स्पर्श करेल. <br /><br />
+          संपर्क / Contact: माझे portfolio पहा आणि प्रोजेक्टवर collaborate करायचे असल्यास contact करा. <br />
         </p>
       </section>
 
       {/* 📞 Contact Section */}
       <section id="contact" className="Contact">
         <h2>Contact Me</h2>
-        <p>Let's connect — feel free to reach out anytime!</p>
+        <p>
+          Let's connect <br />
+          Feel free to reach out anytime! <br />
+        </p>
 
-        {/* संपर्क माहितीची यादी */}
         <ul>
           <li>
             Email:{" "}
-            <a
-              href="mailto:surajkharade000@gmail.com"
-              className="contact-link"
-            >
+            <a href="mailto:surajkharade000@gmail.com" className="contact-link">
               surajkharade000@gmail.com
             </a>
           </li>
@@ -149,7 +157,6 @@ function App() {
           </li>
         </ul>
 
-        {/* 📄 Resume Download Button */}
         <a
           href="https://drive.google.com/file/d/1VqPTle46ViXd0sVt1k84-o9qOi8pFEhJ/view?usp=sharing"
           className="resume-btn"
@@ -161,5 +168,5 @@ function App() {
   );
 }
 
-// या फाइलचा कॉम्पोनेंट बाहेर वापरता यावा म्हणून एक्सपोर्ट केला आहे
+// Export Component
 export default App;
