@@ -13,7 +13,12 @@ html {
 
 /* Background + Text Color */
 body {
-  background-color: #0d0d0d;
+  background-image: url("https://i.postimg.cc/sDSC10kP/59993AE2-2E20-4810-93B3-F7285015B6F5-removebg-preview.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
   color: #e0c070;
   overflow-x: hidden;
 }
@@ -23,7 +28,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(13, 13, 13, 0.9);
+  background: rgba(13, 13, 13, 0.6);
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -53,7 +58,8 @@ body {
   justify-content: center;
   text-align: center;
   padding-top: 80px;
-  background: radial-gradient(circle at center, #1a1a1a, #000);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
 }
 
 /* Logo Container */
@@ -116,131 +122,12 @@ body {
 
 /* 🎬 Projects Section */
 .Projects {
-  background-color: #121212;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
   padding: 5rem 2rem;
   text-align: center;
 }
 
 .Projects h2 {
   color: #ffd700;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* Remove default list dots */
-.Projects ul {
-  list-style: none;
-  padding: 0;
-}
-
-/* Add spacing between list items */
-.Projects li {
-  margin: 10px 0;
-}
-
-/* Project Buttons / Links */
-.project-link {
-  display: inline-block;
-  background: linear-gradient(135deg, #e0c070, #ffd700);
-  color: #121212;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 12px 25px;
-  border-radius: 8px;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-.project-link:hover {
-  transform: translateY(-3px);
-  background: #ffde5d;
-}
-
-/* ℹ️ About Section */
-.About {
-  background-color: #0d0d0d;
-  text-align: center;
-  padding: 5rem 2rem;
-}
-
-.About h2 {
-  color: #ffd700;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.About p {
-  color: #b8a162;
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.6;
-  font-size: 1.05rem;
-}
-
-/* 📞 Contact Section */
-.Contact {
-  background-color: #121212;
-  text-align: center;
-  padding: 5rem 2rem;
-}
-
-.Contact h2 {
-  color: #ffd700;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.Contact ul {
-  list-style: none;
-  margin-top: 1rem;
-}
-
-.Contact li {
-  margin: 8px 0;
-  font-size: 1.05rem;
-}
-
-.contact-link {
-  color: #e0c070;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.contact-link:hover {
-  color: #ffd700;
-}
-
-/* Resume Button */
-.resume-btn {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 12px 30px;
-  background: linear-gradient(135deg, #ffd700, #e0c070);
-  border-radius: 40px;
-  color: #000;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-  transition: 0.4s ease;
-}
-
-.resume-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
-}
-
-/* 📱 Mobile Responsive */
-@media (max-width: 768px) {
-  .App-logo {
-    width: 160px;
-  }
-
-  .App-header h1 {
-    font-size: 2rem;
-  }
-
-  .Navbar {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-}
+  font-size
