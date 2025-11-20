@@ -130,4 +130,123 @@ body {
 
 .Projects h2 {
   color: #ffd700;
-  font-size
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Projects li {
+  margin: 10px 0;
+}
+
+.project-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #e0c070, #ffd700);
+  color: #121212;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.project-link:hover {
+  transform: translateY(-3px);
+  background: #ffde5d;
+}
+
+/* ℹ️ About Section */
+.About {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.About h2 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.About p {
+  color: #b8a162;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* 📞 Contact Section */
+.Contact {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.Contact h2 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Contact ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.Contact li {
+  margin: 8px 0;
+  font-size: 1.05rem;
+}
+
+.contact-link {
+  color: #e0c070;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-link:hover {
+  color: #ffd700;
+}
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #ffd700, #e0c070);
+  border-radius: 40px;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  transition: 0.4s ease;
+}
+
+.resume-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .App-logo {
+    width: 160px;
+  }
+
+  .App-header h1 {
+    font-size: 2rem;
+  }
+
+  .Navbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
