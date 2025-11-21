@@ -109,7 +109,7 @@ body {
 /* Header Text */
 .App-header h1 {
   font-size: 2.8rem;
-  color: #000;
+  color: #e0c070;
   margin-top: 1.5rem;
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 .About h2 {
-  color: #000;
+  color: #ffd700;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -191,7 +191,7 @@ body {
 }
 
 .Contact h2 {
-  color: 000;
+  color: #ffd700;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -207,13 +207,13 @@ body {
 }
 
 .contact-link {
-  color: #000;
+  color: #e0c070;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .contact-link:hover {
-  color: #000;
+  color: #ffd700;
 }
 
 /* Resume Button */
