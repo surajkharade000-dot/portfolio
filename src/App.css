@@ -14,13 +14,12 @@ html {
 /* Background Image Fixed */
 body {
   background-image: url("https://i.postimg.cc/sDSC10kP/59993AE2-2E20-4810-93B3-F7285015B6F5-removebg-preview.png");
-  background-size: contain; 
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
-  background-color: #0d0d0d;
-  color: #e0c070;
   overflow-x: hidden;
+  color: #e0c070;
 }
 
 /* 🟡 Navbar */
