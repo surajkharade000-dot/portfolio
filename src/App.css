@@ -1,4 +1,4 @@
-/* 🌍 Full Reset */
+/* 🌍 Full Reset + Default Font */
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +11,16 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Background Image Fixed */
+/* Background + Text Color */
 body {
   background-image: url("https://i.postimg.cc/sDSC10kP/59993AE2-2E20-4810-93B3-F7285015B6F5-removebg-preview.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   background-attachment: fixed;
-  overflow-x: hidden;
+
   color: #e0c070;
+  overflow-x: hidden;
 }
 
 /* 🟡 Navbar */
@@ -48,7 +49,7 @@ body {
   color: #ffd700;
 }
 
-/* 🏠 Home Section */
+/* 🏠 Header (Home Section) */
 .App-header {
   height: 100vh;
   display: flex;
@@ -57,18 +58,19 @@ body {
   justify-content: center;
   text-align: center;
   padding-top: 80px;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
 }
 
-/* Logo Glow */
+/* Logo Container */
 .logo-container {
   position: relative;
   display: inline-block;
 }
 
+/* Logo Styling */
 .App-logo {
-  width: 220px;
+  width: 200px;
   border-radius: 10px;
   transition: transform 0.6s ease, filter 0.5s ease;
   filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.4));
@@ -79,6 +81,7 @@ body {
   filter: drop-shadow(0 0 35px rgba(255, 215, 0, 0.8));
 }
 
+/* Golden Glow */
 .glow {
   position: absolute;
   top: 50%;
@@ -91,9 +94,16 @@ body {
   animation: pulse 4s infinite ease-in-out;
 }
 
+/* Glow Animation */
 @keyframes pulse {
-  0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
-  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+  0%, 100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.15);
+  }
 }
 
 /* Header Text */
@@ -104,47 +114,102 @@ body {
 }
 
 .App-header p {
-  color: #b8a162;
+  color: #a38f56;
   font-size: 1.2rem;
   margin-top: 0.5rem;
+  line-height: 1.6;
 }
 
-/* 🎬 Sections */
-section {
-  padding: 6rem 2rem;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.6);
+/* 🎬 Projects Section */
+.Projects {
+  background: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(3px);
-  margin-top: 0;
+  padding: 5rem 2rem;
+  text-align: center;
 }
 
-h2 {
+.Projects h2 {
   color: #ffd700;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
-/* Projects */
+.Projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Projects li {
+  margin: 10px 0;
+}
+
 .project-link {
   display: inline-block;
   background: linear-gradient(135deg, #e0c070, #ffd700);
-  color: #000;
+  color: #121212;
+  text-decoration: none;
+  font-weight: 600;
   padding: 12px 25px;
   border-radius: 8px;
-  margin: 10px 0;
-  font-weight: 600;
-  text-decoration: none;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .project-link:hover {
   transform: translateY(-3px);
+  background: #ffde5d;
 }
 
-/* Contact */
+/* ℹ️ About Section */
+.About {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.About h2 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.About p {
+  color: #b8a162;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* 📞 Contact Section */
+.Contact {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.Contact h2 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Contact ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.Contact li {
+  margin: 8px 0;
+  font-size: 1.05rem;
+}
+
 .contact-link {
   color: #e0c070;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .contact-link:hover {
@@ -161,9 +226,27 @@ h2 {
   color: #000;
   font-weight: 700;
   text-decoration: none;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
   transition: 0.4s ease;
 }
 
 .resume-btn:hover {
   transform: translateY(-4px);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .App-logo {
+    width: 160px;
+  }
+
+  .App-header h1 {
+    font-size: 2rem;
+  }
+
+  .Navbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
