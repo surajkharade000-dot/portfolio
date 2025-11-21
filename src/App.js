@@ -20,7 +20,7 @@ function App() {
       <header id="home" className="App-header">
         <div className="logo-container">
           <img
-            src="https://i.postimg.cc/1tHS3fJ1/59993AE2-2E20-4810-93B3-F7285015B6F5.png"
+            src="https://i.postimg.cc/sDSC10kP/59993AE2_2E20_4810_93B3_F7285015B6F5_removebg_preview.png"
             alt="Suraj Kharade Logo"
             className="App-logo"
           />
