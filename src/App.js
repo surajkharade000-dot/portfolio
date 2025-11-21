@@ -64,7 +64,7 @@ function App() {
             </a>
           </li>
 
-          {/* Traditional Video */}
+          {/* Car and bike delivery Video */}
           <li>
             <a
               href="https://drive.google.com/file/d/1BfrkEU5Duna2wDoJX3vOtNH7jUQN_jSc/view?usp=sharing"
@@ -72,7 +72,7 @@ function App() {
               rel="noopener noreferrer"
               className="project-link"
             >
-              Traditional Video
+              Car and bike delivery Video
             </a>
           </li>
 
