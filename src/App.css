@@ -58,8 +58,8 @@ body {
   justify-content: center;
   text-align: center;
   padding-top: 80px;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(1px);
 }
 
 /* Logo Container */
