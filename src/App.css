@@ -109,7 +109,7 @@ body {
 /* Header Text */
 .App-header h1 {
   font-size: 2.8rem;
-  color: #e0c070;
+  color: #000;
   margin-top: 1.5rem;
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 .About h2 {
-  color: #ffd700;
+  color: #000;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -191,7 +191,7 @@ body {
 }
 
 .Contact h2 {
-  color: #ffd700;
+  color: 000;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
