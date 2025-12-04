@@ -55,7 +55,7 @@ function App() {
           {/* Teaser */}
           <li>
             <a
-              href="https://drive.google.com/drive/folders/1rirlcByJ7K2qcU5XCgY8MbBgCwJKiBi3?usp=sharing"
+              href="https://drive.google.com/file/d/1BFbQSlJGra-YWQTMP_JwnG2hXdJtZMV5/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
