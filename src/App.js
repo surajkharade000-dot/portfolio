@@ -17,12 +17,13 @@ function App() {
       </nav>
 
       {/* 🏠 Home Section */}
-      <header id="home" className="App-header">
+      <header id="home" className="App-header section-bg">
         <div className="logo-container">
           <img
             src="https://i.postimg.cc/sDSC10kP/59993AE2_2E20_4810_93B3_F7285015B6F5_removebg_preview.png"
             alt="Suraj Kharade Logo"
             className="App-logo"
+            loading="lazy"
           />
           <div className="glow"></div>
         </div>
@@ -36,111 +37,112 @@ function App() {
       </header>
 
       {/* 🎬 Projects Section */}
-      <section id="projects" className="Projects">
+      <section id="projects" className="Projects section-bg">
         <h2>My Projects</h2>
 
         <ul>
-          {/* Cinematic Video */}
           <li>
             <a
-              href="https://drive.google.com/file/d/1auKON7EGxGNR8pch2nTxTHxtymt8QxzL/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1auKON7EGxGNR8pch2nTxTHxtymt8QxzL/view"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
-              Cinematic Video
+              🎥 Cinematic Video
             </a>
           </li>
 
-          {/* Teaser */}
           <li>
             <a
-              href="https://drive.google.com/file/d/1BFbQSlJGra-YWQTMP_JwnG2hXdJtZMV5/view?usp=sharing"
+              href="https://drive.google.com/file/d/1BFbQSlJGra-YWQTMP_JwnG2hXdJtZMV5/view"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
-              Teaser
+              🎞️ Teaser
             </a>
           </li>
 
-          {/* Car and bike delivery Video */}
           <li>
             <a
-              href="https://drive.google.com/file/d/1BfrkEU5Duna2wDoJX3vOtNH7jUQN_jSc/view?usp=sharing"
+              href="https://drive.google.com/file/d/1BfrkEU5Duna2wDoJX3vOtNH7jUQN_jSc/view"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
-              Car and bike delivery Video
+              🚗 Car & Bike Delivery Video
             </a>
           </li>
 
-          {/* Marathi Prewedding Song */}
           <li>
             <a
-              href="https://drive.google.com/file/d/1_8zZAOmm5ga1lj3G2FKuQu34nnXbwBKk/view?usp=sharing"
+              href="https://drive.google.com/file/d/1_8zZAOmm5ga1lj3G2FKuQu34nnXbwBKk/view"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
-              Marathi Prewedding Song
+              💍 Marathi Pre-Wedding Song
             </a>
           </li>
         </ul>
       </section>
 
       {/* ℹ️ About Section */}
-      <section id="about" className="About">
+      <section id="about" className="About section-bg">
         <h2>About Me</h2>
 
         <p>
-          Name: सुरज खराडे – एक experienced Cinematic Video Editor. <br />
-          <br />
-          Skills: Adobe Premiere Pro, CapCut, कलर ग्रेडिंग. <br />
-          <br />
-          Specialization: Cinematic Videos / Wedding & Pre-Wedding Teasers /
-          Traditional Highlights / Promotional & Social Media Videos <br />
-          <br />
-          Experience: Cinematic video editing आणि सर्व प्रकारची video editing केली
-          आहे. <br />
-          <br />
-          Work Style: नेमके संपादन, cinematic touch, आणि प्रेक्षकांसाठी immersive
-          experience तयार करणे. <br />
-          <br />
-          Learning Approach: सतत नवीन techniques शिकणे आणि creative राहणे. <br />
-          <br />
-          Creative Interests: नवीन styles experiment करणे, editing tips share
-          करणे, visuals अधिक engaging बनवणे. <br />
-          <br />
-          Goal: असा content तयार करणे जो सुंदर दिसत असेल आणि प्रेक्षकांच्या
-          भावना स्पर्श करेल. <br />
-          <br />
-          संपर्क / Contact: माझे portfolio पहा आणि प्रोजेक्टवर collaborate करायचे
-          असल्यास contact करा. <br />
+          <strong>नाव:</strong> सुरज खराडे – Experienced Cinematic Video Editor
+          <br /><br />
+
+          <strong>Skills:</strong> Adobe Premiere Pro, CapCut, Color Grading
+          <br /><br />
+
+          <strong>Specialization:</strong> Cinematic Videos, Wedding &
+          Pre-Wedding Teasers, Traditional Highlights, Promotional & Social Media
+          Videos
+          <br /><br />
+
+          <strong>Experience:</strong> विविध प्रकारच्या cinematic आणि professional
+          video editing projects
+          <br /><br />
+
+          <strong>Work Style:</strong> Clean editing, cinematic touch, immersive
+          storytelling
+          <br /><br />
+
+          <strong>Learning:</strong> सतत नवीन techniques शिकणे आणि creative राहणे
+          <br /><br />
+
+          <strong>Goal:</strong> असा content तयार करणे जो visually stunning आणि
+          emotionally connect करणारा असेल
         </p>
       </section>
 
       {/* 📞 Contact Section */}
-      <section id="contact" className="Contact">
+      <section id="contact" className="Contact section-bg">
         <h2>Contact Me</h2>
+
         <p>
           Let's connect <br />
-          Feel free to reach out anytime! <br />
+          Feel free to reach out anytime!
         </p>
 
         <ul>
           <li>
-            Email:{" "}
-            <a href="mailto:surajkharade000@gmail.com" className="contact-link">
+            📧 Email:{" "}
+            <a
+              href="mailto:surajkharade000@gmail.com"
+              className="contact-link"
+            >
               surajkharade000@gmail.com
             </a>
           </li>
 
           <li>
-            Instagram:{" "}
+            📸 Instagram:{" "}
             <a
-              href="https://www.instagram.com/x.suraj__18?igsh=MjQ0MG43cmtsZmQw"
+              href="https://www.instagram.com/x.suraj__18"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"
@@ -150,19 +152,19 @@ function App() {
           </li>
 
           <li>
-            YouTube:{" "}
+            ▶️ YouTube:{" "}
             <a
-              href="https://youtube.com/@surajjediting?si=GE2jJcv8xB1yNi7q"
+              href="https://youtube.com/@surajjediting"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"
             >
-              YouTube Channel
+              Suraj Editing
             </a>
           </li>
 
           <li>
-            Mobile:{" "}
+            📞 Mobile:{" "}
             <a href="tel:+919767774450" className="contact-link">
               +91 97677 74450
             </a>
@@ -170,7 +172,9 @@ function App() {
         </ul>
 
         <a
-          href="https://drive.google.com/file/d/1VqPTle46ViXd0sVt1k84-o9qOi8pFEhJ/view?usp=sharing"
+          href="https://drive.google.com/file/d/1VqPTle46ViXd0sVt1k84-o9qOi8pFEhJ/view"
+          target="_blank"
+          rel="noopener noreferrer"
           className="resume-btn"
         >
           Download Resume
@@ -180,5 +184,4 @@ function App() {
   );
 }
 
-// Export Component
 export default App;
