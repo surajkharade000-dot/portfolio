@@ -36,13 +36,22 @@ function App() {
         <h2>My Projects</h2>
         <ul>
           <li><a className="project-link" href="#" target="_blank">🎥 Cinematic Video</a></li>
-          <li><a className="project-link" href="#" target="_blank">🎞️ Viral Video</a></li>
+          <li>
+            <a
+              className="project-link"
+              href="https://drive.google.com/file/d/1oSOMl5KpbB-LvE6bCufhQfYcn20fRtok/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🎞️ Viral Video
+            </a>
+          </li>
           <li><a className="project-link" href="#" target="_blank">🚗 Car & Bike Delivery</a></li>
           <li><a className="project-link" href="#" target="_blank">💍 Pre-Wedding Song</a></li>
         </ul>
       </section>
 
-      {/* About – ALL 4 CHANGES */}
+      {/* About */}
       <section id="about" className="About section-bg">
         <h2>About Me</h2>
 
