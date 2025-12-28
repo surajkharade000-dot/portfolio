@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [modalProject, setModalProject] = useState(null);
+
+  const handleProjectClick = (projectName) => {
+    setModalProject(projectName); // Modal open
+  };
+
+  const closeModal = () => {
+    setModalProject(null);
+  };
+
   return (
     <div className="App">
       {/* Navbar */}
@@ -35,17 +45,57 @@ function App() {
       <section id="projects" className="Projects section-bg">
         <h2>My Projects</h2>
         <ul>
-          <li><a className="project-link" href="#" target="_blank">🎥 Cinematic Video</a></li>
-          <li><a className="project-link" href="#" target="_blank">🎞️ Viral Video</a></li>
-          <li><a className="project-link" href="#" target="_blank">🚗 Car & Bike Delivery</a></li>
-          <li><a className="project-link" href="#" target="_blank">💍 Pre-Wedding Song</a></li>
+          <li>
+            <button
+              className="project-link"
+              onClick={() => handleProjectClick("🎥 Cinematic Video")}
+            >
+              🎥 Cinematic Video
+            </button>
+          </li>
+          <li>
+            <button
+              className="project-link"
+              onClick={() => handleProjectClick("🎞️ Viral Video")}
+            >
+              🎞️ Viral Video
+            </button>
+          </li>
+          <li>
+            <button
+              className="project-link"
+              onClick={() => handleProjectClick("🚗 Car & Bike Delivery")}
+            >
+              🚗 Car & Bike Delivery
+            </button>
+          </li>
+          <li>
+            <button
+              className="project-link"
+              onClick={() => handleProjectClick("💍 Pre-Wedding Song")}
+            >
+              💍 Pre-Wedding Song
+            </button>
+          </li>
         </ul>
       </section>
 
-      {/* About – ALL 4 CHANGES */}
+      {/* Modal */}
+      {modalProject && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <h3>{modalProject}</h3>
+            <p>Project details / description goes here.</p>
+            <button className="project-link" onClick={closeModal}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* About */}
       <section id="about" className="About section-bg">
         <h2>About Me</h2>
-
         <div className="about-wrapper">
           {/* Left */}
           <div className="about-left">
@@ -54,7 +104,6 @@ function App() {
               एक <span>Cinematic Video Editor</span> जो
               visuals मधून emotion आणि story create करतो.
             </p>
-
             <p className="about-sub">
               Clean cuts • Cinematic mood • Emotional storytelling
             </p>
@@ -62,10 +111,22 @@ function App() {
 
           {/* Right */}
           <div className="about-right">
-            <div className="about-box">🎬 <h4>What I Do</h4><p>Wedding, Pre-Wedding, Cinematic & Social Media Videos</p></div>
-            <div className="about-box">🛠️ <h4>Skills</h4><p>Premiere Pro<br/>CapCut<br/>Color Grading</p></div>
-            <div className="about-box">🎥 <h4>Style</h4><p>Cinematic look with emotional flow</p></div>
-            <div className="about-box">🚀 <h4>Goal</h4><p>Visually stunning & emotionally connecting content</p></div>
+            <div className="about-box">
+              🎬 <h4>What I Do</h4>
+              <p>Wedding, Pre-Wedding, Cinematic & Social Media Videos</p>
+            </div>
+            <div className="about-box">
+              🛠️ <h4>Skills</h4>
+              <p>Premiere Pro<br/>CapCut<br/>Color Grading</p>
+            </div>
+            <div className="about-box">
+              🎥 <h4>Style</h4>
+              <p>Cinematic look with emotional flow</p>
+            </div>
+            <div className="about-box">
+              🚀 <h4>Goal</h4>
+              <p>Visually stunning & emotionally connecting content</p>
+            </div>
           </div>
         </div>
       </section>
