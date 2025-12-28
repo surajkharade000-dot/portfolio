@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: #000 !important; /* FORCE ALL TEXT TO BLACK */
 }
 
 /* Smooth Scroll */
@@ -12,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Background + Text Color */
+/* 🌄 Background + Default Text */
 body {
   background-image: url("https://i.postimg.cc/X75MB6KZ/59993AE2-2E20-4810-93B3-F7285015B6F5-removebg-preview.png");
   background-size: cover;
@@ -20,6 +19,7 @@ body {
   background-position: center;
   background-attachment: fixed;
 
+  color: #f2f2f2; /* readable on dark bg */
   overflow-x: hidden;
 }
 
@@ -34,21 +34,22 @@ body {
   gap: 2rem;
   padding: 1rem;
   z-index: 100;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(6px);
 }
 
 .Navbar a {
   text-decoration: none;
   font-weight: 600;
+  color: #ffffff;
   transition: 0.3s;
 }
 
 .Navbar a:hover {
-  color: #333 !important;
+  color: #ffcc00;
 }
 
-/* 🏠 Header (Home Section) */
+/* 🏠 Header */
 .App-header {
   height: 100vh;
   display: flex;
@@ -61,18 +62,18 @@ body {
   backdrop-filter: blur(1px);
 }
 
-/* Logo Container */
+/* Logo */
 .logo-container {
   position: relative;
   display: inline-block;
 }
 
-/* Logo Styling */
 .App-logo {
   width: 200px;
   border-radius: 10px;
   transition: transform 0.6s ease, filter 0.5s ease;
   filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.4));
+  will-change: transform;
 }
 
 .App-logo:hover {
@@ -88,12 +89,11 @@ body {
   width: 260px;
   height: 260px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent 70%);
   transform: translate(-50%, -50%);
   animation: pulse 4s infinite ease-in-out;
 }
 
-/* Glow Animation */
 @keyframes pulse {
   0%, 100% {
     opacity: 0.6;
@@ -116,58 +116,43 @@ body {
   line-height: 1.6;
 }
 
-/* 🎬 Projects Section */
-.Projects {
+/* 🧩 Common Section BG */
+.section-bg {
   background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(1px);
-  padding: 5rem 2rem;
   text-align: center;
+  padding: 5rem 2rem;
 }
 
-.Projects h2 {
+/* 🎬 Projects */
+.Projects h2,
+.About h2,
+.Contact h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
 .Projects ul {
   list-style: none;
-  padding: 0;
-}
-
-.Projects li {
-  margin: 10px 0;
 }
 
 .project-link {
   display: inline-block;
-  background: #ddd;
-  color: #000 !important;
+  background: #e5e5e5;
+  color: #000;
   text-decoration: none;
   font-weight: 600;
   padding: 12px 25px;
   border-radius: 8px;
   transition: 0.3s ease;
-  cursor: pointer;
 }
 
 .project-link:hover {
   transform: translateY(-3px);
-  background: #ccc;
+  background: #d4d4d4;
 }
 
-/* ℹ️ About Section */
-.About {
-  background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(1px);
-  text-align: center;
-  padding: 5rem 2rem;
-}
-
-.About h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
+/* ℹ️ About */
 .About p {
   max-width: 700px;
   margin: auto;
@@ -175,36 +160,20 @@ body {
   font-size: 1.05rem;
 }
 
-/* 📞 Contact Section */
-.Contact {
-  background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(1px);
-  text-align: center;
-  padding: 5rem 2rem;
-}
-
-.Contact h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
+/* 📞 Contact */
 .Contact ul {
   list-style: none;
   margin-top: 1rem;
 }
 
-.Contact li {
-  margin: 8px 0;
-  font-size: 1.05rem;
-}
-
 .contact-link {
   text-decoration: none;
+  color: #ffffff;
   transition: 0.3s;
 }
 
 .contact-link:hover {
-  color: #333 !important;
+  color: #ffcc00;
 }
 
 /* Resume Button */
@@ -212,7 +181,7 @@ body {
   display: inline-block;
   margin-top: 2rem;
   padding: 12px 30px;
-  background: #ddd;
+  background: #e5e5e5;
   border-radius: 40px;
   color: #000;
   font-weight: 700;
@@ -226,7 +195,7 @@ body {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
 }
 
-/* 📱 Mobile Responsive */
+/* 📱 Mobile Fix */
 @media (max-width: 768px) {
   .App-logo {
     width: 160px;
@@ -239,5 +208,9 @@ body {
   .Navbar {
     flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  body {
+    background-attachment: scroll;
   }
 }
