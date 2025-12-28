@@ -43,7 +43,7 @@ function App() {
         <ul>
           <li>
             <a
-              href="https://drive.google.com/file/d/1auKON7EGxGNR8pch2nTxTHxtymt8QxzL/view"
+              href="https://drive.google.com/file/d/1FKkwp2FSeP4ur-vYELp1FVKIoQ3AZPOw/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
@@ -54,12 +54,12 @@ function App() {
 
           <li>
             <a
-              href="https://drive.google.com/file/d/1BFbQSlJGra-YWQTMP_JwnG2hXdJtZMV5/view"
+              href="https://drive.google.com/file/d/1oSOMl5KpbB-LvE6bCufhQfYcn20fRtok/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
-              🎞️ Teaser
+              🎞️ Latest viral video
             </a>
           </li>
 
