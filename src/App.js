@@ -1,12 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 
 function App() {
-  const [modalProject, setModalProject] = useState(null);
-
-  const handleProjectClick = (projectName) => setModalProject(projectName);
-  const closeModal = () => setModalProject(null);
-
   return (
     <div className="App">
       {/* Navbar */}
@@ -27,6 +22,7 @@ function App() {
           />
           <div className="glow"></div>
         </div>
+
         <h1>Suraj Kharade</h1>
         <p>
           Video Editing Professional <br />
@@ -39,68 +35,32 @@ function App() {
       <section id="projects" className="Projects section-bg">
         <h2>My Projects</h2>
         <ul>
-          <li>
-            <button
-              className="project-link"
-              onClick={() => handleProjectClick("🎥 Cinematic Video")}
-            >
-              🎥 Cinematic Video
-            </button>
-          </li>
-          <li>
-            <a
-              className="project-link"
-              href="https://drive.google.com/file/d/1oSOMl5KpbB-LvE6bCufhQfYcn20fRtok/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              🎞️ Viral Video
-            </a>
-          </li>
-          <li>
-            <button
-              className="project-link"
-              onClick={() => handleProjectClick("🚗 Car & Bike Delivery")}
-            >
-              🚗 Car & Bike Delivery
-            </button>
-          </li>
-          <li>
-            <button
-              className="project-link"
-              onClick={() => handleProjectClick("💍 Pre-Wedding Song")}
-            >
-              💍 Pre-Wedding Song
-            </button>
-          </li>
+          <li><a className="project-link" href="#" target="_blank">🎥 Cinematic Video</a></li>
+          <li><a className="project-link" href="#" target="_blank">🎞️ Viral Video</a></li>
+          <li><a className="project-link" href="#" target="_blank">🚗 Car & Bike Delivery</a></li>
+          <li><a className="project-link" href="#" target="_blank">💍 Pre-Wedding Song</a></li>
         </ul>
       </section>
 
-      {/* Modal */}
-      {modalProject && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <h3>{modalProject}</h3>
-            <p>Project details / description goes here.</p>
-            <button className="project-link" onClick={closeModal}>
-              Close
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* About */}
+      {/* About – ALL 4 CHANGES */}
       <section id="about" className="About section-bg">
         <h2>About Me</h2>
+
         <div className="about-wrapper">
+          {/* Left */}
           <div className="about-left">
             <p className="about-intro">
-              नमस्कार 👋 मी <strong>सुरज खराडे</strong> — एक <span>Cinematic Video Editor</span> जो visuals मधून emotion आणि story create करतो.
+              नमस्कार 👋 मी <strong>सुरज खराडे</strong> —
+              एक <span>Cinematic Video Editor</span> जो
+              visuals मधून emotion आणि story create करतो.
             </p>
+
             <p className="about-sub">
               Clean cuts • Cinematic mood • Emotional storytelling
             </p>
           </div>
+
+          {/* Right */}
           <div className="about-right">
             <div className="about-box">🎬 <h4>What I Do</h4><p>Wedding, Pre-Wedding, Cinematic & Social Media Videos</p></div>
             <div className="about-box">🛠️ <h4>Skills</h4><p>Premiere Pro<br/>CapCut<br/>Color Grading</p></div>
