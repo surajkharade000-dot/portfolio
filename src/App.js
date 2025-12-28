@@ -16,7 +16,7 @@ function App() {
       <header id="home" className="App-header section-bg">
         <div className="logo-container">
           <img
-            src="https://i.postimg.cc/kXvcmm3y/Chat-GPT-Image-Dec-28-2025-04-53-32-PM.png"
+            src="https://i.postimg.cc/TYdbn5Fj/Chat-GPT-Image-Dec-28-2025-04-53-32-PM-removebg-preview.png"
             alt="Suraj Kharade Logo"
             className="App-logo"
           />
