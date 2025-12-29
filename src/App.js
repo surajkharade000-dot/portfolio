@@ -32,54 +32,55 @@ function App() {
       </header>
 
       {/* Projects */}
-      <section id="projects" className="Projects section-bg">
-        <h2>My Projects</h2>
-        <ul>
-          <li>
-            <a
-              className="project-link"
-              href="https://example.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              🎥 Cinematic Video
-            </a>
-          </li>
+<section id="projects" className="Projects section-bg">
+  <h2>My Projects</h2>
+  <ul>
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/file/d/1eD8NbBIY0Ykex-rk3i53fUsbRZZOrx3Q/view?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🎥 Cinematic Video
+      </a>
+    </li>
 
-          <li>
-            <a
-              className="project-link"
-              href="https://drive.google.com/file/d/1oSOMl5KpbB-LvE6bCufhQfYcn20fRtok/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              🎞️ Viral Video
-            </a>
-          </li>
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/file/d/1oSOMl5KpbB-LvE6bCufhQfYcn20fRtok/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🎞️ Viral Video
+      </a>
+    </li>
 
-          <li>
-            <a
-              className="project-link"
-              href="https://example.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              🚗 Car & Bike Delivery
-            </a>
-          </li>
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/file/d/1-_JhrMz1a0x5_ri4Sh3g-FKEyvWWjRTM/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🚗 Car & Bike Delivery
+      </a>
+    </li>
 
-          <li>
-            <a
-              className="project-link"
-              href="https://example.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              💍 Pre-Wedding Song
-            </a>
-          </li>
-        </ul>
-      </section>
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/file/d/1_8zZAOmm5ga1lj3G2FKuQu34nnXbwBKk/view?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        💍 Pre-Wedding Song
+      </a>
+    </li>
+  </ul>
+</section>
+
 
       {/* About */}
       <section id="about" className="About section-bg">
