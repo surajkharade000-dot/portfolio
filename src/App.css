@@ -82,7 +82,7 @@ body {
   text-decoration: none;
 }
 
-/* About – NO BLUR + LEFT RIGHT + TIMELINE FEEL + ANIMATION */
+/* About */
 .about-wrapper {
   max-width: 1100px;
   margin: auto;
@@ -131,6 +131,19 @@ body {
 .about-box h4 {
   margin: 0.6rem 0;
   color: #ffcc00;
+}
+
+/* 🔥 CONTACT – clickable but NOT blue (ADDED) */
+.Contact a {
+  color: inherit;              /* blue काढला */
+  text-decoration: none;       /* underline काढली */
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.Contact a:hover {
+  color: #ffcc00;              /* gold hover */
+  text-shadow: 0 0 8px rgba(255,204,0,0.6);
 }
 
 /* Mobile */
