@@ -35,7 +35,17 @@ function App() {
       <section id="projects" className="Projects section-bg">
         <h2>My Projects</h2>
         <ul>
-          <li><a className="project-link" href="#" target="_blank">🎥 Cinematic Video</a></li>
+          <li>
+            <a
+              className="project-link"
+              href="https://example.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🎥 Cinematic Video
+            </a>
+          </li>
+
           <li>
             <a
               className="project-link"
@@ -46,8 +56,28 @@ function App() {
               🎞️ Viral Video
             </a>
           </li>
-          <li><a className="project-link" href="#" target="_blank">🚗 Car & Bike Delivery</a></li>
-          <li><a className="project-link" href="#" target="_blank">💍 Pre-Wedding Song</a></li>
+
+          <li>
+            <a
+              className="project-link"
+              href="https://example.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🚗 Car & Bike Delivery
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="project-link"
+              href="https://example.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              💍 Pre-Wedding Song
+            </a>
+          </li>
         </ul>
       </section>
 
@@ -56,7 +86,6 @@ function App() {
         <h2>About Me</h2>
 
         <div className="about-wrapper">
-          {/* Left */}
           <div className="about-left">
             <p className="about-intro">
               नमस्कार 👋 मी <strong>सुरज खराडे</strong> —
@@ -69,12 +98,23 @@ function App() {
             </p>
           </div>
 
-          {/* Right */}
           <div className="about-right">
-            <div className="about-box">🎬 <h4>What I Do</h4><p>Wedding, Pre-Wedding, Cinematic & Social Media Videos</p></div>
-            <div className="about-box">🛠️ <h4>Skills</h4><p>Premiere Pro<br/>CapCut<br/>Color Grading</p></div>
-            <div className="about-box">🎥 <h4>Style</h4><p>Cinematic look with emotional flow</p></div>
-            <div className="about-box">🚀 <h4>Goal</h4><p>Visually stunning & emotionally connecting content</p></div>
+            <div className="about-box">
+              🎬 <h4>What I Do</h4>
+              <p>Wedding, Pre-Wedding, Cinematic & Social Media Videos</p>
+            </div>
+            <div className="about-box">
+              🛠️ <h4>Skills</h4>
+              <p>Premiere Pro<br />CapCut<br />Color Grading</p>
+            </div>
+            <div className="about-box">
+              🎥 <h4>Style</h4>
+              <p>Cinematic look with emotional flow</p>
+            </div>
+            <div className="about-box">
+              🚀 <h4>Goal</h4>
+              <p>Visually stunning & emotionally connecting content</p>
+            </div>
           </div>
         </div>
       </section>
