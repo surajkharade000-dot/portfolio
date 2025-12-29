@@ -120,15 +120,47 @@ function App() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="Contact section-bg">
-        <h2>Contact Me</h2>
-        <ul>
-          <li>📧 surajkharade000@gmail.com</li>
-          <li>📸 Instagram: x.suraj__18</li>
-          <li>▶️ YouTube: Suraj Editing</li>
-          <li>📞 +91 97677 74450</li>
-        </ul>
-      </section>
+<section id="contact" className="Contact section-bg">
+  <h2>Contact Me</h2>
+  <ul>
+    <li>
+      📧{" "}
+      <a href="mailto:surajkharade000@gmail.com">
+        surajkharade000@gmail.com
+      </a>
+    </li>
+
+    <li>
+      📸{" "}
+      <a
+        href="https://instagram.com/x.suraj__18"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram: x.suraj__18
+      </a>
+    </li>
+
+    <li>
+      ▶️{" "}
+      <a
+        href="https://www.youtube.com/@SurajEditing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube: Suraj Editing
+      </a>
+    </li>
+
+    <li>
+      📞{" "}
+      <a href="tel:+919767774450">
+        +91 97677 74450
+      </a>
+    </li>
+  </ul>
+</section>
+
     </div>
   );
 }
