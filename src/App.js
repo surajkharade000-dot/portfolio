@@ -145,7 +145,7 @@ function App() {
     <li>
       ▶️{" "}
       <a
-        href="https://www.youtube.com/@SurajEditing"
+        href="https://www.youtube.com/@surajjediting"
         target="_blank"
         rel="noopener noreferrer"
       >
