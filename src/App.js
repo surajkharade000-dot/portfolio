@@ -40,7 +40,7 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/file/d/1eD8NbBIY0Ykex-rk3i53fUsbRZZOrx3Q/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1ieIV5goe48Yb5Tyd5F8TfXtx88oY74SO/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -74,7 +74,7 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/file/d/1_8zZAOmm5ga1lj3G2FKuQu34nnXbwBKk/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1X7bkd6dunG5l0yI5pQ1-HqmaV64_CZCi/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -108,7 +108,7 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/your-birthday-link"
+        href="https://drive.google.com/file/d/1GxuO6HPwqP9S1H2COPYE_xsFCI6ZOs4R/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -119,7 +119,7 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/your-wedding-highlight-link"
+        href="https://drive.google.com/file/d/19UZuhyfy2QRpYNuWPBnFOuxBznqzz_nt/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -130,7 +130,7 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/your-wedding-teaser-link"
+        href="https://drive.google.com/file/d/1w_1MFqau8ne0Zf2AM87Pv0i84xJI1_8b/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -152,11 +152,11 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/your-anniversary-link"
+        href="https://drive.google.com/file/d/1eD8NbBIY0Ykex-rk3i53fUsbRZZOrx3Q/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
-        ❤️ Anniversary Video
+        ❤️ Reception Video
       </a>
     </li>
 
