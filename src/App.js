@@ -34,7 +34,9 @@ function App() {
       {/* Projects */}
 <section id="projects" className="Projects section-bg">
   <h2>My Projects</h2>
-  <ul>
+
+  <ul className="projects-list">
+    {/* Existing */}
     <li>
       <a
         className="project-link"
@@ -53,7 +55,7 @@ function App() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        🎞️ Viral Video
+        🎞️ Viral / Social Media Video
       </a>
     </li>
 
@@ -64,10 +66,11 @@ function App() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        🚗 Car & Bike Delivery
+        🚗 Car & Bike Cinematic
       </a>
     </li>
 
+    {/* Pre-Wedding */}
     <li>
       <a
         className="project-link"
@@ -75,11 +78,101 @@ function App() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        💍 Pre-Wedding Song
+        💍 Pre-Wedding – Marathi Song
+      </a>
+    </li>
+
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/your-hindi-prewedding-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        💍 Pre-Wedding – Hindi Song
+      </a>
+    </li>
+
+    {/* New */}
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/your-engagement-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        💑 Engagement Video
+      </a>
+    </li>
+
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/your-birthday-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🎂 Birthday Cinematic Video
+      </a>
+    </li>
+
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/your-wedding-highlight-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        💒 Wedding Highlight Film
+      </a>
+    </li>
+
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/your-wedding-teaser-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🎬 Wedding Teaser / Trailer
+      </a>
+    </li>
+
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/your-save-the-date-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📅 Save The Date Video
+      </a>
+    </li>
+
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/your-anniversary-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ❤️ Anniversary Video
+      </a>
+    </li>
+
+    <li>
+      <a
+        className="project-link"
+        href="https://drive.google.com/your-reels-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📱 Instagram Reels / Shorts
       </a>
     </li>
   </ul>
 </section>
+
 
 
       {/* About */}
