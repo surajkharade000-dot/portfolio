@@ -163,11 +163,11 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/your-reels-link"
+        href="https://drive.google.com/file/d/1_dEQossYoF3v8QzZLraU9jKj9FWCd550/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
-        📱 Instagram Reels / Shorts
+        🕺💃 Sangeet
       </a>
     </li>
   </ul>
