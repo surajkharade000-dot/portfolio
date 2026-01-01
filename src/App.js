@@ -32,136 +32,108 @@ function App() {
       </header>
 
       {/* Projects */}
-<section id="projects" className="Projects section-bg">
-  <h2>My Projects</h2>
-  <ul>
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1eD8NbBIY0Ykex-rk3i53fUsbRZZOrx3Q/view?usp=drive_link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🎥 Cinematic Video
-      </a>
-    </li>
+      <section id="projects" className="Projects section-bg">
+        <h2>My Projects</h2>
 
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1oSOMl5KpbB-LvE6bCufhQfYcn20fRtok/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🎞️ Viral Video
-      </a>
-    </li>
+        <ul className="projects-list">
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              🎥 Cinematic Video
+            </a>
+          </li>
 
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1-_JhrMz1a0x5_ri4Sh3g-FKEyvWWjRTM/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🚗 Car & Bike Delivery
-      </a>
-    </li>
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              🎞️ Viral / Social Media Video
+            </a>
+          </li>
 
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1_8zZAOmm5ga1lj3G2FKuQu34nnXbwBKk/view?usp=drive_link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        💍 Pre-Wedding Song
-      </a>
-    </li>
-  </ul>
-</section>
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              💍 Pre-Wedding – Marathi Song
+            </a>
+          </li>
 
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              💍 Pre-Wedding – Hindi Song
+            </a>
+          </li>
+
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              💑 Engagement Video
+            </a>
+          </li>
+
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              🎂 Birthday Cinematic Video
+            </a>
+          </li>
+
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              💒 Wedding Highlight Film
+            </a>
+          </li>
+
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              🎬 Wedding Teaser / Trailer
+            </a>
+          </li>
+
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              📅 Save The Date Video
+            </a>
+          </li>
+
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              ❤️ Anniversary Video
+            </a>
+          </li>
+
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              🚗 Car & Bike Cinematic
+            </a>
+          </li>
+
+          <li>
+            <a className="project-link" href="YOUR_LINK_HERE">
+              📱 Instagram Reels / Shorts
+            </a>
+          </li>
+        </ul>
+      </section>
 
       {/* About */}
       <section id="about" className="About section-bg">
         <h2>About Me</h2>
 
-        <div className="about-wrapper">
-          <div className="about-left">
-            <p className="about-intro">
-              नमस्कार 👋 मी <strong>सुरज खराडे</strong> —
-              एक <span>Cinematic Video Editor</span> जो
-              visuals मधून emotion आणि story create करतो.
-            </p>
+        <p className="about-intro">
+          नमस्कार 👋 मी <strong>सुरज खराडे</strong> — एक Cinematic Video
+          Editor जो visuals मधून emotion आणि story create करतो.
+        </p>
 
-            <p className="about-sub">
-              Clean cuts • Cinematic mood • Emotional storytelling
-            </p>
-          </div>
-
-          <div className="about-right">
-            <div className="about-box">
-              🎬 <h4>What I Do</h4>
-              <p>Wedding, Pre-Wedding, Cinematic & Social Media Videos</p>
-            </div>
-            <div className="about-box">
-              🛠️ <h4>Skills</h4>
-              <p>Premiere Pro<br />CapCut<br />Color Grading</p>
-            </div>
-            <div className="about-box">
-              🎥 <h4>Style</h4>
-              <p>Cinematic look with emotional flow</p>
-            </div>
-            <div className="about-box">
-              🚀 <h4>Goal</h4>
-              <p>Visually stunning & emotionally connecting content</p>
-            </div>
-          </div>
-        </div>
+        <p className="about-sub">
+          Clean cuts • Cinematic mood • Emotional storytelling
+        </p>
       </section>
 
       {/* Contact */}
-<section id="contact" className="Contact section-bg">
-  <h2>Contact Me</h2>
-  <ul>
-    <li>
-      📧{" "}
-      <a href="mailto:surajkharade000@gmail.com">
-        surajkharade000@gmail.com
-      </a>
-    </li>
-
-    <li>
-      📸{" "}
-      <a
-        href="https://instagram.com/x.suraj__18"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Instagram: x.suraj__18
-      </a>
-    </li>
-
-    <li>
-      ▶️{" "}
-      <a
-        href="https://www.youtube.com/@surajjediting"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        YouTube: Suraj Editing
-      </a>
-    </li>
-
-    <li>
-      📞{" "}
-      <a href="tel:+919767774450">
-        +91 97677 74450
-      </a>
-    </li>
-  </ul>
-</section>
-
+      <section id="contact" className="Contact section-bg">
+        <h2>Contact Me</h2>
+        <ul>
+          <li>📧 surajkharade000@gmail.com</li>
+          <li>📸 Instagram: x.suraj__18</li>
+          <li>▶️ YouTube: Suraj Editing</li>
+          <li>📞 +91 97677 74450</li>
+        </ul>
+      </section>
     </div>
   );
 }
