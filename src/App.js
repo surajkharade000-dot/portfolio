@@ -111,18 +111,43 @@ function App() {
       </section>
 
       {/* About */}
-      <section id="about" className="About section-bg">
-        <h2>About Me</h2>
+<section id="about" className="About section-bg">
+  <h2>About Me</h2>
 
-        <p className="about-intro">
-          नमस्कार 👋 मी <strong>सुरज खराडे</strong> — एक Cinematic Video
-          Editor जो visuals मधून emotion आणि story create करतो.
-        </p>
+  <div className="about-wrapper">
+    <div className="about-left">
+      <p className="about-intro">
+        नमस्कार 👋 मी <strong>सुरज खराडे</strong> —
+        एक <span>Cinematic Video Editor</span> जो
+        visuals मधून emotion आणि story create करतो.
+      </p>
 
-        <p className="about-sub">
-          Clean cuts • Cinematic mood • Emotional storytelling
-        </p>
-      </section>
+      <p className="about-sub">
+        Clean cuts • Cinematic mood • Emotional storytelling
+      </p>
+    </div>
+
+    <div className="about-right">
+      <div className="about-box">
+        🎬 <h4>What I Do</h4>
+        <p>Wedding, Pre-Wedding, Cinematic & Social Media Videos</p>
+      </div>
+      <div className="about-box">
+        🛠️ <h4>Skills</h4>
+        <p>Premiere Pro<br />CapCut<br />Color Grading</p>
+      </div>
+      <div className="about-box">
+        🎥 <h4>Style</h4>
+        <p>Cinematic look with emotional flow</p>
+      </div>
+      <div className="about-box">
+        🚀 <h4>Goal</h4>
+        <p>Visually stunning & emotionally connecting content</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Contact */}
       <section id="contact" className="Contact section-bg">
