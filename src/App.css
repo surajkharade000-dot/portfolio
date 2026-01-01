@@ -72,6 +72,17 @@ body {
 }
 
 /* Projects */
+.projects-list {
+  list-style: none;
+  max-width: 700px;
+  margin: 2rem auto 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
 .project-link {
   display: inline-block;
   margin: 12px 0;
