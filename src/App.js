@@ -85,7 +85,7 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/your-hindi-prewedding-link"
+        href="https://drive.google.com/file/d/1KhabPzYYO9nA5pjsNoWQ_TbMFpFULjNt/view?usp=drive_link"
         target="_blank"
         rel="noopener noreferrer"
       >
