@@ -40,7 +40,7 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/file/d/1ieIV5goe48Yb5Tyd5F8TfXtx88oY74SO/view?usp=sharing"
+        href="https://drive.google.com/file/d/1Ask2iZsBJilB5ZxpZmicz9_vyO0utd9x/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -62,11 +62,11 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/file/d/1-_JhrMz1a0x5_ri4Sh3g-FKEyvWWjRTM/view?usp=sharing"
+        href="https://drive.google.com/file/d/1Ohs4dI2sIgO3OW_EKM1Jq0jBjSDvMTea/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
-        🚗 Car & Bike Cinematic
+        💍 Pre-Wedding – Marathi Song
       </a>
     </li>
 
@@ -163,7 +163,7 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/file/d/1_dEQossYoF3v8QzZLraU9jKj9FWCd550/view?usp=sharing"
+        href="https://drive.google.com/file/d/1pczhFo7lLiF4IBB1tIPg-wshlTP_MTjz/view?usp=drive_link"
         target="_blank"
         rel="noopener noreferrer"
       >
