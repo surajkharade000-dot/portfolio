@@ -51,7 +51,7 @@ function App() {
     <li>
       <a
         className="project-link"
-        href="https://drive.google.com/file/d/1oSOMl5KpbB-LvE6bCufhQfYcn20fRtok/view?usp=sharing"
+        href="https://drive.google.com/drive/folders/1w3pw8J0BndyfAqfoboVw1fV8KSdyx5FZ?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
