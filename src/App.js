@@ -66,7 +66,7 @@ function App() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        💍 Pre-Wedding – Marathi Song
+        💍 Pre-Wedding – Hindi Song
       </a>
     </li>
 
