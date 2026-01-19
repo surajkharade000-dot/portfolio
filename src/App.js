@@ -230,7 +230,7 @@ function App() {
     <li>
       📧{" "}
       <a href="mailto:surajkharade000@gmail.com">
-        surajkharade000@gmail.com
+        Cine Editvala
       </a>
     </li>
 
@@ -241,7 +241,7 @@ function App() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Instagram: x.suraj__18
+        Instagram: Cine Editvala
       </a>
     </li>
 
@@ -252,7 +252,7 @@ function App() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        YouTube: Suraj Editing
+        YouTube: Cine Editvala
       </a>
     </li>
 
