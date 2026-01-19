@@ -18,7 +18,7 @@ function App() {
         {/*
         <div className="logo-container">
           <img
-            src="https://i.postimg.cc/TYdbn5Fj/Chat-GPT-Image-Dec-28-2025-04-53-32-PM-removebg-preview.png"
+            src="                                        "
             alt="Suraj Kharade Logo"
             className="App-logo"
           />
@@ -26,7 +26,7 @@ function App() {
         </div>
         */}
 
-        <h1>Suraj Kharade</h1>
+        <h1>Cine Editvala</h1>
         <p>
           Video Editing Professional <br />
           Support Engineer <br />
