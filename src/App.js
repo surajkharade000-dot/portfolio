@@ -16,7 +16,7 @@ function App() {
       <header id="home" className="App-header section-bg">
         <div className="logo-container">
           <img
-            src="         "
+            src="https://i.postimg.cc/xdrrd0Q0/ttt.png"
             alt="Cine Editvala Logo"
             className="App-logo"
           />
