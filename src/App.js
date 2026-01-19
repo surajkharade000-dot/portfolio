@@ -17,13 +17,13 @@ function App() {
         <div className="logo-container">
           <img
             src="https://i.postimg.cc/TYdbn5Fj/Chat-GPT-Image-Dec-28-2025-04-53-32-PM-removebg-preview.png"
-            alt="Suraj Kharade Logo"
+            alt="Cine Editvala Logo"
             className="App-logo"
           />
           <div className="glow"></div>
         </div>
 
-        <h1>Suraj Kharade</h1>
+        <h1>Cine editvala</h1>
         <p>
           Video Editing Professional <br />
           Support Engineer <br />
