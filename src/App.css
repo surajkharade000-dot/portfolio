@@ -9,17 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 🔴 BACKGROUND IMAGE TEMPORARILY OFF */
-/*
 body {
   background: url("https://i.postimg.cc/vmsb6fSd/logo22.jpg") center/cover fixed;
-  color: #f2f2f2;
-}
-*/
-
-/* ✅ SIMPLE CLEAN BACKGROUND FOR NOW */
-body {
-  background: #0e0e0e;
   color: #f2f2f2;
 }
 
@@ -28,7 +19,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0,0,0,0.7);
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -50,9 +41,7 @@ body {
 .section-bg {
   padding: 5rem 2rem;
   text-align: center;
-
-  /* 🔴 SECTION BACKGROUND OVERLAY OFF */
-  /* background: rgba(0,0,0,0.25); */
+  background: rgba(0,0,0,0.25);
 }
 
 /* Header */
@@ -63,7 +52,6 @@ body {
   justify-content: center;
 }
 
-/* LOGO CSS kept (logo JSX OFF आहे) */
 .logo-container {
   position: relative;
 }
@@ -103,11 +91,6 @@ body {
   color: #000;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
-}
-
-.project-link:hover {
-  background: #ffcc00;
 }
 
 /* About */
@@ -146,14 +129,14 @@ body {
 
 .about-box {
   padding: 1.6rem;
-  background: rgba(255,255,255,0.03);
+  background: rgba(0,0,0,0.7);
   border-radius: 14px;
   transition: 0.4s;
 }
 
 .about-box:hover {
   transform: translateY(-6px);
-  background: rgba(255,255,255,0.06);
+  background: rgba(0,0,0,0.85);
 }
 
 .about-box h4 {
@@ -161,16 +144,16 @@ body {
   color: #ffcc00;
 }
 
-/* Contact links – NOT blue */
+/* 🔥 CONTACT – clickable but NOT blue (ADDED) */
 .Contact a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit;              /* blue काढला */
+  text-decoration: none;       /* underline काढली */
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .Contact a:hover {
-  color: #ffcc00;
+  color: #ffcc00;              /* gold hover */
   text-shadow: 0 0 8px rgba(255,204,0,0.6);
 }
 
