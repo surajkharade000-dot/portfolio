@@ -19,7 +19,7 @@ function App() {
         <div className="logo-container">
           <img
             src="                                        "
-            alt="Suraj Kharade Logo"
+            alt="Cine Editvala Logo"
             className="App-logo"
           />
           <div className="glow"></div>
@@ -124,7 +124,7 @@ function App() {
         <h2>About Me</h2>
 
         <p>
-          नमस्कार 👋 मी <strong>सुरज खराडे</strong> — एक Cinematic Video Editor जो
+          नमस्कार 👋 मी <strong>Cine Editvala</strong> — एक Cinematic Video Editor जो
           visuals मधून emotion आणि story create करतो.
         </p>
 
@@ -136,8 +136,8 @@ function App() {
         <h2>Contact Me</h2>
         <ul>
           <li>📧 <a href="mailto:surajkharade000@gmail.com">surajkharade000@gmail.com</a></li>
-          <li>📸 <a href="https://instagram.com/x.suraj__18" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li>▶️ <a href="https://www.youtube.com/@surajjediting" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          <li>📸 <a href="https://www.instagram.com/cineeditvala?igsh=N2o5MmgwOGt5bTdu" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li>▶️ <a href="https://www.youtube.com/@cineeditvala" target="_blank" rel="noopener noreferrer">YouTube</a></li>
           <li>📞 <a href="tel:+919767774450">+91 97677 74450</a></li>
         </ul>
       </section>
