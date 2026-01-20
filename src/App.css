@@ -151,6 +151,10 @@ body {
 
 
 /* ================= ABOUT ================= */
+/* About Me heading center */
+#about h2 {
+  text-align: center !important;
+}
 .about-wrapper {
   max-width: 1100px;
   margin: auto;
