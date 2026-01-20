@@ -91,6 +91,15 @@ body {
 }
 
 /* ================= PROJECTS ================= */
+/* ===== My Projects Heading Center ===== */
+#projects h2 {
+  text-align: center !important;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* ===== Projects List ===== */
 .projects-list {
   list-style: none;
   max-width: 720px;
@@ -98,20 +107,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 22px;
-  align-items: flex-start;
+  align-items: flex-start; /* left-aligned buttons */
 }
 
 .projects-list li {
   width: 100%;
-  text-align: left;
-}
-
-.projects-list li p {
-  margin-top: 8px;
-  max-width: 620px;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  opacity: 0.75;
+  text-align: left; /* left-aligned text */
 }
 
 .project-link {
@@ -132,6 +133,22 @@ body {
   opacity: 0.9;
   box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5);
 }
+
+.project-desc {
+  margin-top: 8px;
+  max-width: 620px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.75;
+}
+
+/* ===== Desktop Spacing ===== */
+@media (min-width: 1024px) {
+  .projects-list {
+    gap: 2.5rem;
+  }
+}
+
 
 /* ================= ABOUT ================= */
 .about-wrapper {
