@@ -6,7 +6,7 @@ const projects = [
   {
     title: "🎥 Cinematic Video",
     link: "https://drive.google.com/file/d/1Ask2iZsBJilB5ZxpZmicz9_vyO0utd9x/view",
-    desc: "A cinematic video is not just a recording, it’s a visual experience."
+    desc: "A cinematic video is not just a recording, it’s a visual experience. Through creative camera work, lighting, color grading, and music, it tells a story that feels like a movie.."
   },
   {
     title: "🎞️ Viral / Social Media Video",
@@ -16,57 +16,57 @@ const projects = [
   {
     title: "💍 Pre-Wedding – Hindi Song",
     link: "https://drive.google.com/file/d/1Ohs4dI2sIgO3OW_EKM1Jq0jBjSDvMTea/view",
-    desc: "Cinematic pre-wedding video crafted on a Hindi song."
+    desc: "A pre-wedding cinematic film captures your love story in a movie-style format.With beautiful locations, emotions, and music, it turns real moments into a timeless film."
   },
   {
     title: "💍 Pre-Wedding – Marathi Song",
     link: "https://drive.google.com/file/d/1X7bkd6dunG5l0yI5pQ1-HqmaV64_CZCi/view",
-    desc: "Marathi song-based cinematic storytelling."
+    desc: "A Marathi song-based pre-wedding film that reflects culture, romance, and emotions.Designed to feel personal, soulful, and cinematic."
   },
   {
     title: "👶 Baby Shoot Reel",
     link: "https://drive.google.com/file/d/1KhabPzYYO9nA5pjsNoWQ_TbMFpFULjNt/view",
-    desc: "Cute expressions and joyful baby moments captured creatively."
+    desc: "A baby shoot reel captures cute expressions and joyful moments creatively. Short, sweet, and perfect for memories you’ll cherish forever."
   },
   {
     title: "💑 Engagement Video",
     link: "https://drive.google.com/file/d/1sEJULFktQEuMu8cKU6b5j2TiuNCpa4f9/view",
-    desc: "Engagement rituals and emotions told cinematically."
+    desc: "An engagement cinematic video beautifully captures the emotions, rituals, and special moments of your engagement.With cinematic visuals and music, it turns your celebration into a memorable film.."
   },
   {
     title: "🎂 Birthday Cinematic Video",
     link: "https://drive.google.com/file/d/1GxuO6HPwqP9S1H2COPYE_xsFCI6ZOs4R/view",
-    desc: "Birthday celebrations turned into a movie-like experience."
+    desc: "A birthday cinematic video captures joyful moments in a movie-style experience.With creative shots, music, and emotions, it turns your celebration into a lasting memory."
   },
   {
     title: "💒 Wedding Highlight Film",
     link: "https://drive.google.com/file/d/19UZuhyfy2QRpYNuWPBnFOuxBznqzz_nt/view",
-    desc: "Best moments of the wedding day captured cinematically."
+    desc: "Best moments of the wedding day captured."
   },
   {
     title: "🎬 Wedding Teaser / Trailer",
     link: "https://drive.google.com/file/d/1w_1MFqau8ne0Zf2AM87Pv0i84xJI1_8b/view",
-    desc: "Short, impactful teaser to build excitement."
+    desc: "A wedding teaser is a short, impactful preview of the wedding film. Designed to build excitement with cinematic shots and music.."
   },
   {
     title: "📅 Save The Date Video",
     link: "https://drive.google.com/file/d/1me5G6k6ITlsbVdeajW1r8eR_065HYDk5/view",
-    desc: "Creative and stylish wedding date announcement."
+    desc: "A save the date video is a creative way to announce your wedding date. Stylish visuals and music make the announcement memorable."
   },
   {
     title: "❤️ Reception Video",
     link: "https://drive.google.com/file/d/1eD8NbBIY0Ykex-rk3i53fUsbRZZOrx3Q/view",
-    desc: "Grand reception moments with cinematic editing."
+    desc: "A reception video captures grand entries, celebrations, and joyful moments. Cinematic editing brings out the elegance and excitement of the event."
   },
   {
     title: "🕺💃 Sangeet",
     link: "https://drive.google.com/file/d/1pczhFo7lLiF4IBB1tIPg-wshlTP_MTjz/view",
-    desc: "Energetic dance performances and fun family moments."
+    desc: "A sangeet video highlights dance performances, fun, and family moments. Vibrant edits and music make it energetic and entertaining.."
   },
   {
     title: "❤️ Retro",
     link: "https://drive.google.com/file/d/11k0ttpwDw7BKoWprzOWnr6xeLuIHck8k/view",
-    desc: "Old-school music and visuals with a nostalgic feel."
+    desc: "A retro-style video brings classic vibes with old music and visuals. Perfect for creating a nostalgic and timeless feel."
   }
 ];
 
