@@ -91,30 +91,33 @@ body {
 }
 
 /* ================= PROJECTS ================= */
-/* ===== My Projects Heading Center ===== */
+/* ================= PROJECTS SECTION ================= */
+
+/* Heading centered */
 #projects h2 {
-  text-align: center !important;
+  text-align: center;
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 2rem;
 }
 
-/* ===== Projects List ===== */
+/* Project list layout */
 .projects-list {
   list-style: none;
   max-width: 720px;
   margin: 2.5rem auto 0;
   display: flex;
   flex-direction: column;
-  gap: 22px;
-  align-items: flex-start; /* left-aligned buttons */
+  gap: 30px;
+  align-items: flex-start; /* left-aligned titles and description */
 }
 
 .projects-list li {
   width: 100%;
-  text-align: left; /* left-aligned text */
+  text-align: left;
 }
 
+/* Project link / title */
 .project-link {
   display: inline-block;
   padding: 14px 26px;
@@ -125,30 +128,61 @@ body {
   font-weight: 500;
   font-size: 0.95rem;
   transition: 0.35s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
 .project-link:hover {
   transform: translateY(-2px);
   opacity: 0.9;
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 16px 45px rgba(0,0,0,0.5);
 }
 
+/* Project description */
 .project-desc {
   margin-top: 8px;
-  max-width: 620px;
+  max-width: 720px;
   font-size: 0.95rem;
   line-height: 1.7;
   opacity: 0.75;
 }
 
-/* ===== Desktop Spacing ===== */
-@media (min-width: 1024px) {
-  .projects-list {
-    gap: 2.5rem;
-  }
+/* Project GIF / Video media */
+.project-media img,
+.project-media video {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 14px;
+  margin-top: 0.8rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  object-fit: cover;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
+.project-media img:hover,
+.project-media video:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+}
+
+/* Responsive / Mobile adjustments */
+@media (max-width: 900px) {
+  .projects-list {
+    align-items: center;
+  }
+  
+  .projects-list li {
+    text-align: center;
+  }
+  
+  .project-desc {
+    max-width: 90%;
+  }
+  
+  .project-media img,
+  .project-media video {
+    max-width: 90%;
+  }
+}
 
 /* ================= ABOUT ================= */
 /* About Me heading center */
