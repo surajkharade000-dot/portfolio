@@ -1,29 +1,66 @@
 import React from "react";
 import "./App.css";
 
+/* ---------------- Projects Data ---------------- */
+const projects = [
+  {
+    title: "🎥 Cinematic Video",
+    link: "https://drive.google.com/file/d/1Ask2iZsBJilB5ZxpZmicz9_vyO0utd9x/view",
+    desc: "A cinematic video is not just a recording, it’s a visual experience with creative camera work and color grading."
+  },
+  {
+    title: "🎞️ Viral / Social Media Video",
+    link: "https://drive.google.com/drive/folders/1w3pw8J0BndyfAqfoboVw1fV8KSdyx5FZ",
+    desc: "Short, engaging videos designed for social media impact with fast cuts and trends."
+  },
+  {
+    title: "💍 Pre-Wedding – Hindi Song",
+    link: "https://drive.google.com/file/d/1Ohs4dI2sIgO3OW_EKM1Jq0jBjSDvMTea/view",
+    desc: "A cinematic pre-wedding video crafted on a Hindi song with emotional storytelling."
+  },
+  {
+    title: "💍 Pre-Wedding – Marathi Song",
+    link: "https://drive.google.com/file/d/1X7bkd6dunG5l0yI5pQ1-HqmaV64_CZCi/view",
+    desc: "Marathi song-based cinematic storytelling with culture and romance."
+  },
+  {
+    title: "👶 Baby Shoot Reel",
+    link: "https://drive.google.com/file/d/1KhabPzYYO9nA5pjsNoWQ_TbMFpFULjNt/view",
+    desc: "Cute expressions and joyful baby moments captured creatively."
+  },
+  {
+    title: "💒 Wedding Highlight Film",
+    link: "https://drive.google.com/file/d/19UZuhyfy2QRpYNuWPBnFOuxBznqzz_nt/view",
+    desc: "Beautiful cinematic highlights of wedding rituals and emotions."
+  },
+];
+
+/* ---------------- App Component ---------------- */
 function App() {
   return (
     <div className="App">
-      {/* Navbar */}
-      <nav className="Navbar">
+
+      {/* ---------- Navbar ---------- */}
+      <nav className="Navbar" aria-label="Main Navigation">
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      {/* Home */}
+      {/* ---------- Home ---------- */}
       <header id="home" className="App-header section-bg">
         <div className="logo-container">
           <img
             src="https://i.postimg.cc/xdrrd0Q0/ttt.png"
             alt="Cine Editvala Logo"
             className="App-logo"
+            loading="lazy"
           />
           <div className="glow"></div>
         </div>
 
-        <h1>Cine editvala</h1>
+        <h1>Cine Editvala – Cinematic Video Editor</h1>
         <p>
           Video Editing Professional <br />
           Support Engineer <br />
@@ -31,209 +68,28 @@ function App() {
         </p>
       </header>
 
-      {/* Projects */}
-<section id="projects" className="Projects section-bg">
-  <h2>My Projects</h2>
+      {/* ---------- Projects ---------- */}
+      <section id="projects" className="Projects section-bg">
+        <h2>My Projects</h2>
 
-  <ul className="projects-list">
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1Ask2iZsBJilB5ZxpZmicz9_vyO0utd9x/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🎥 Cinematic Video
-      </a>
-      <p>
-        A cinematic video is not just a recording, it’s a visual experience.
-        Creative camera work, color grading, and music make it feel like a movie.
-      </p>
-    </li>
+        <ul className="projects-list">
+          {projects.map((project, index) => (
+            <li key={index}>
+              <a
+                className="project-link"
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.title}
+              </a>
+              <p>{project.desc}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
 
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/drive/folders/1w3pw8J0BndyfAqfoboVw1fV8KSdyx5FZ?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🎞️ Viral / Social Media Video
-      </a>
-      <p>
-        Short, engaging videos designed for social media impact.
-        Fast cuts, trends, and creative edits grab attention instantly.
-      </p>
-    </li>
-
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1Ohs4dI2sIgO3OW_EKM1Jq0jBjSDvMTea/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        💍 Pre-Wedding – Hindi Song
-      </a>
-      <p>
-        A cinematic pre-wedding video crafted on a Hindi song.
-        Love, chemistry, and emotions told in a filmy style.
-      </p>
-    </li>
-
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1X7bkd6dunG5l0yI5pQ1-HqmaV64_CZCi/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        💍 Pre-Wedding – Marathi Song
-      </a>
-      <p>
-        A Marathi song-based pre-wedding film reflecting culture and romance.
-        Personal, soulful, and cinematic storytelling.
-      </p>
-    </li>
-
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1KhabPzYYO9nA5pjsNoWQ_TbMFpFULjNt/view?usp=drive_link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        👶 Baby Shoot Reel
-      </a>
-      <p>
-        Cute expressions and joyful baby moments captured creatively.
-        Short, sweet, and perfect for timeless memories.
-      </p>
-    </li>
-
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1sEJULFktQEuMu8cKU6b5j2TiuNCpa4f9/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        💑 Engagement Video
-      </a>
-      <p>
-        Captures engagement rituals, emotions, and special moments.
-        Cinematic visuals and music to relive the celebration.
-      </p>
-    </li>
-
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1GxuO6HPwqP9S1H2COPYE_xsFCI6ZOs4R/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🎂 Birthday Cinematic Video
-      </a>
-      <p>
-        Turns birthday celebrations into a movie-like experience.
-        Fun moments, emotions, and music create lasting memories.
-      </p>
-    </li>
-
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/19UZuhyfy2QRpYNuWPBnFOuxBznqzz_nt/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        💒 Wedding Highlight Film
-      </a>
-      <p>
-        Showcases the best moments of your wedding day.
-        A beautiful cinematic story of emotions and rituals.
-      </p>
-    </li>
-
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1w_1MFqau8ne0Zf2AM87Pv0i84xJI1_8b/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🎬 Wedding Teaser / Trailer
-      </a>
-      <p>
-        A short, impactful preview of the wedding film.
-        Designed to build excitement with cinematic shots.
-      </p>
-    </li>
-
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1me5G6k6ITlsbVdeajW1r8eR_065HYDk5/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        📅 Save The Date Video
-      </a>
-      <p>
-        A creative and stylish way to announce your wedding date.
-        Music and visuals make it memorable.
-      </p>
-    </li>
-
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1eD8NbBIY0Ykex-rk3i53fUsbRZZOrx3Q/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ❤️ Reception Video
-      </a>
-      <p>
-        Captures grand entries and joyful reception moments.
-        Cinematic editing highlights elegance and celebration.
-      </p>
-    </li>
-
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/1pczhFo7lLiF4IBB1tIPg-wshlTP_MTjz/view?usp=drive_link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        🕺💃 Sangeet
-      </a>
-      <p>
-        Dance performances, fun, and family moments combined.
-        Energetic edits with vibrant music.
-      </p>
-    </li>
-
-    <li>
-      <a
-        className="project-link"
-        href="https://drive.google.com/file/d/11k0ttpwDw7BKoWprzOWnr6xeLuIHck8k/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ❤️ Retro
-      </a>
-      <p>
-        Classic vibes with old-school music and visuals.
-        Perfect for a nostalgic and timeless feel.
-      </p>
-    </li>
-  </ul>
-</section>
-  
-      {/* About */}
+      {/* ---------- About ---------- */}
       <section id="about" className="About section-bg">
         <h2>About Me</h2>
 
@@ -241,10 +97,8 @@ function App() {
           <div className="about-left">
             <p className="about-intro">
               नमस्कार 👋 मी <strong>Cine Editvala</strong> —
-              एक <span>Cinematic Video Editor</span> जो
-              visuals मधून emotion आणि story create करतो.
+              एक Cinematic Video Editor जो visuals मधून emotion आणि story create करतो.
             </p>
-
             <p className="about-sub">
               Clean cuts • Cinematic mood • Emotional storytelling
             </p>
@@ -271,47 +125,17 @@ function App() {
         </div>
       </section>
 
-      {/* Contact */}
-<section id="contact" className="Contact section-bg">
-  <h2>Contact Me</h2>
-  <ul>
-    <li>
-      📧{" "}
-      <a href="mailto:surajkharade000@gmail.com">
-        Cine Editvala
-      </a>
-    </li>
+      {/* ---------- Contact ---------- */}
+      <section id="contact" className="Contact section-bg">
+        <h2>Contact Me</h2>
 
-    <li>
-      📸{" "}
-      <a
-        href="https://www.instagram.com/cineeditvala?igsh=N2o5MmgwOGt5bTdu"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Instagram: Cine Editvala
-      </a>
-    </li>
-
-    <li>
-      ▶️{" "}
-      <a
-        href="https://www.youtube.com/@cineeditvala"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        YouTube: Cine Editvala
-      </a>
-    </li>
-
-    <li>
-      📞{" "}
-      <a href="tel:+919767774450">
-        +91 97677 74450
-      </a>
-    </li>
-  </ul>
-</section>
+        <ul>
+          <li>📧 <a href="mailto:surajkharade000@gmail.com">surajkharade000@gmail.com</a></li>
+          <li>📸 <a href="https://www.instagram.com/cineeditvala" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li>▶️ <a href="https://www.youtube.com/@cineeditvala" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          <li>📞 <a href="tel:+919767774450">+91 97677 74450</a></li>
+        </ul>
+      </section>
 
     </div>
   );
