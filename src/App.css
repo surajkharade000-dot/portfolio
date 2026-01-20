@@ -127,20 +127,12 @@ body {
 }
 
 /* ================= CONTACT ================= */
-.Contact ul {
-  list-style: none;
-  text-align: center;
-}
-
-.Contact li {
-  margin: 0.8rem 0;
-}
 .Contact {
   text-align: center;
 }
 
 .Contact h2 {
-  text-align: center;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 
@@ -148,6 +140,24 @@ body {
   list-style: none;
   padding: 0;
 }
+
+.Contact li {
+  margin: 0.9rem 0;
+  color: #ffffff; /* icon + text white */
+  font-size: 1rem;
+}
+
+.Contact a {
+  color: #ffffff; /* links white */
+  text-decoration: none;
+  opacity: 1; /* full white */
+  transition: opacity 0.3s ease;
+}
+
+.Contact a:hover {
+  opacity: 0.8; /* hover effect */
+}
+
 
 /* ================= MOBILE ================= */
 @media (max-width: 900px) {
