@@ -36,7 +36,6 @@ function App() {
   <h2>My Projects</h2>
 
   <ul className="projects-list">
-    {/* Existing */}
     <li>
       <a
         className="project-link"
@@ -46,6 +45,10 @@ function App() {
       >
         🎥 Cinematic Video
       </a>
+      <p>
+        A cinematic video is not just a recording, it’s a visual experience.
+        Creative camera work, color grading, and music make it feel like a movie.
+      </p>
     </li>
 
     <li>
@@ -57,6 +60,10 @@ function App() {
       >
         🎞️ Viral / Social Media Video
       </a>
+      <p>
+        Short, engaging videos designed for social media impact.
+        Fast cuts, trends, and creative edits grab attention instantly.
+      </p>
     </li>
 
     <li>
@@ -68,9 +75,12 @@ function App() {
       >
         💍 Pre-Wedding – Hindi Song
       </a>
+      <p>
+        A cinematic pre-wedding video crafted on a Hindi song.
+        Love, chemistry, and emotions told in a filmy style.
+      </p>
     </li>
 
-    {/* Pre-Wedding */}
     <li>
       <a
         className="project-link"
@@ -80,6 +90,10 @@ function App() {
       >
         💍 Pre-Wedding – Marathi Song
       </a>
+      <p>
+        A Marathi song-based pre-wedding film reflecting culture and romance.
+        Personal, soulful, and cinematic storytelling.
+      </p>
     </li>
 
     <li>
@@ -89,11 +103,14 @@ function App() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        👶 baby shoot reel 
+        👶 Baby Shoot Reel
       </a>
+      <p>
+        Cute expressions and joyful baby moments captured creatively.
+        Short, sweet, and perfect for timeless memories.
+      </p>
     </li>
 
-    {/* New */}
     <li>
       <a
         className="project-link"
@@ -103,6 +120,10 @@ function App() {
       >
         💑 Engagement Video
       </a>
+      <p>
+        Captures engagement rituals, emotions, and special moments.
+        Cinematic visuals and music to relive the celebration.
+      </p>
     </li>
 
     <li>
@@ -114,6 +135,10 @@ function App() {
       >
         🎂 Birthday Cinematic Video
       </a>
+      <p>
+        Turns birthday celebrations into a movie-like experience.
+        Fun moments, emotions, and music create lasting memories.
+      </p>
     </li>
 
     <li>
@@ -125,6 +150,10 @@ function App() {
       >
         💒 Wedding Highlight Film
       </a>
+      <p>
+        Showcases the best moments of your wedding day.
+        A beautiful cinematic story of emotions and rituals.
+      </p>
     </li>
 
     <li>
@@ -136,6 +165,10 @@ function App() {
       >
         🎬 Wedding Teaser / Trailer
       </a>
+      <p>
+        A short, impactful preview of the wedding film.
+        Designed to build excitement with cinematic shots.
+      </p>
     </li>
 
     <li>
@@ -147,6 +180,10 @@ function App() {
       >
         📅 Save The Date Video
       </a>
+      <p>
+        A creative and stylish way to announce your wedding date.
+        Music and visuals make it memorable.
+      </p>
     </li>
 
     <li>
@@ -158,6 +195,10 @@ function App() {
       >
         ❤️ Reception Video
       </a>
+      <p>
+        Captures grand entries and joyful reception moments.
+        Cinematic editing highlights elegance and celebration.
+      </p>
     </li>
 
     <li>
@@ -169,8 +210,13 @@ function App() {
       >
         🕺💃 Sangeet
       </a>
+      <p>
+        Dance performances, fun, and family moments combined.
+        Energetic edits with vibrant music.
+      </p>
     </li>
-          <li>
+
+    <li>
       <a
         className="project-link"
         href="https://drive.google.com/file/d/11k0ttpwDw7BKoWprzOWnr6xeLuIHck8k/view?usp=sharing"
@@ -179,12 +225,14 @@ function App() {
       >
         ❤️ Retro
       </a>
+      <p>
+        Classic vibes with old-school music and visuals.
+        Perfect for a nostalgic and timeless feel.
+      </p>
     </li>
   </ul>
 </section>
-
-
-
+  
       {/* About */}
       <section id="about" className="About section-bg">
         <h2>About Me</h2>
