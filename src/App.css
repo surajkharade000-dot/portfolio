@@ -135,6 +135,19 @@ body {
 .Contact li {
   margin: 0.8rem 0;
 }
+.Contact {
+  text-align: center;
+}
+
+.Contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.Contact ul {
+  list-style: none;
+  padding: 0;
+}
 
 /* ================= MOBILE ================= */
 @media (max-width: 900px) {
