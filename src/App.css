@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "Poppins", sans-serif;
 }
 
 html {
@@ -10,9 +11,8 @@ html {
 }
 
 body {
-  background: url("https://i.postimg.cc/BvyjbP6m/total-black-solid-color-deskop-otljrvlhh4rl1zy9.jpg")
-    center/cover fixed;
-  color: #f2f2f2;
+  background: #000;
+  color: #f5f5f7;
 }
 
 /* ================= NAVBAR ================= */
@@ -20,106 +20,85 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: saturate(180%) blur(20px);
   display: flex;
   justify-content: center;
   gap: 2.5rem;
   padding: 1rem;
   z-index: 100;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 .Navbar a {
-  color: #fff;
+  color: #f5f5f7;
   text-decoration: none;
-  font-weight: 600;
-  position: relative;
-  transition: 0.3s;
-}
-
-.Navbar a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: #ffcc00;
-  left: 0;
-  bottom: -6px;
-  transition: 0.3s;
+  font-weight: 500;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: 0.3s ease;
 }
 
 .Navbar a:hover {
-  color: #ffcc00;
-}
-
-.Navbar a:hover::after {
-  width: 100%;
+  opacity: 1;
 }
 
 /* ================= SECTIONS ================= */
 .section-bg {
-  padding: 6rem 2rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(4px);
-  text-align: center;
+  padding: 7rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(14px);
 }
 
-/* ================= HEADER ================= */
+/* ================= HEADER (APPLE STYLE) ================= */
 .App-header {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
 }
 
 .logo-container {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .App-logo {
-  width: 200px;
-  z-index: 2;
-  position: relative;
+  width: 120px;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.7));
 }
 
+/* Glow removed for Apple feel */
 .glow {
-  position: absolute;
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 204, 0, 0.25), transparent);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: pulse 3s infinite;
+  display: none;
 }
 
-@keyframes pulse {
-  0% {
-    opacity: 0.6;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.08);
-  }
-  100% {
-    opacity: 0.6;
-    transform: translate(-50%, -50%) scale(1);
-  }
+.App-header h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+
+.App-header p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.75;
+  font-weight: 400;
 }
 
 /* ================= PROJECTS ================= */
 .projects-list {
   list-style: none;
-  max-width: 700px;
-  margin: 2rem auto 0;
+  max-width: 720px;
+  margin: 2.5rem auto 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  align-items: flex-start; /* ONLY projects left */
+  gap: 22px;
+  align-items: flex-start;
 }
 
 .projects-list li {
@@ -129,26 +108,29 @@ body {
 
 .projects-list li p {
   margin-top: 8px;
-  max-width: 600px;
-  line-height: 1.6;
-  opacity: 0.85;
+  max-width: 620px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.75;
 }
 
 .project-link {
   display: inline-block;
-  padding: 14px 28px;
-  background: linear-gradient(135deg, #ffcc00, #ffb700);
+  padding: 14px 26px;
+  background: #ffffff;
   color: #000;
-  border-radius: 10px;
+  border-radius: 14px;
   text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s ease;
-  box-shadow: 0 8px 20px rgba(255, 204, 0, 0.3);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: 0.35s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .project-link:hover {
-  transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 14px 30px rgba(255, 204, 0, 0.5);
+  transform: translateY(-2px);
+  opacity: 0.9;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5);
 }
 
 /* ================= ABOUT ================= */
@@ -157,7 +139,7 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 2.5rem;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -166,58 +148,68 @@ body {
 }
 
 .about-intro {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   line-height: 1.9;
 }
 
 .about-intro span {
-  color: #ffcc00;
+  color: #ffffff;
+  font-weight: 500;
 }
 
 .about-sub {
   margin-top: 1rem;
-  opacity: 0.85;
+  opacity: 0.7;
 }
 
 .about-right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 1.8rem;
 }
 
 .about-box {
-  padding: 1.8rem;
-  background: rgba(0, 0, 0, 0.75);
-  border-radius: 16px;
-  transition: 0.4s ease;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 20px;
+  transition: 0.35s ease;
 }
 
 .about-box:hover {
-  transform: translateY(-8px) scale(1.02);
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .about-box h4 {
   margin: 0.6rem 0;
-  color: #ffcc00;
+  font-weight: 500;
 }
 
 /* ================= CONTACT ================= */
+.Contact ul {
+  list-style: none;
+}
+
+.Contact li {
+  margin: 0.8rem 0;
+}
+
 .Contact a {
   color: inherit;
   text-decoration: none;
-  cursor: pointer;
+  opacity: 0.85;
   transition: 0.3s ease;
 }
 
 .Contact a:hover {
-  color: #ffcc00;
-  text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+  opacity: 1;
 }
 
 /* ================= MOBILE ================= */
 @media (max-width: 900px) {
+  .App-header h1 {
+    font-size: 2.4rem;
+  }
+
   .about-wrapper {
     grid-template-columns: 1fr;
     text-align: center;
@@ -227,11 +219,6 @@ body {
     text-align: center;
   }
 
-  .Navbar {
-    gap: 1.5rem;
-  }
-
-  /* Projects mobile */
   .projects-list {
     align-items: center;
   }
