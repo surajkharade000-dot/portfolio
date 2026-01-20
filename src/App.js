@@ -1,27 +1,27 @@
 import React from "react";
 import "./App.css";
 
-/* ---------------- Projects Data ---------------- */
+/* ================= PROJECTS DATA ================= */
 const projects = [
   {
     title: "🎥 Cinematic Video",
     link: "https://drive.google.com/file/d/1Ask2iZsBJilB5ZxpZmicz9_vyO0utd9x/view",
-    desc: "A cinematic video is not just a recording, it’s a visual experience with creative camera work and color grading."
+    desc: "A cinematic video is not just a recording, it’s a visual experience."
   },
   {
     title: "🎞️ Viral / Social Media Video",
     link: "https://drive.google.com/drive/folders/1w3pw8J0BndyfAqfoboVw1fV8KSdyx5FZ",
-    desc: "Short, engaging videos designed for social media impact with fast cuts and trends."
+    desc: "Short, engaging videos designed for social media impact."
   },
   {
     title: "💍 Pre-Wedding – Hindi Song",
     link: "https://drive.google.com/file/d/1Ohs4dI2sIgO3OW_EKM1Jq0jBjSDvMTea/view",
-    desc: "A cinematic pre-wedding video crafted on a Hindi song with emotional storytelling."
+    desc: "Cinematic pre-wedding video crafted on a Hindi song."
   },
   {
     title: "💍 Pre-Wedding – Marathi Song",
     link: "https://drive.google.com/file/d/1X7bkd6dunG5l0yI5pQ1-HqmaV64_CZCi/view",
-    desc: "Marathi song-based cinematic storytelling with culture and romance."
+    desc: "Marathi song-based cinematic storytelling."
   },
   {
     title: "👶 Baby Shoot Reel",
@@ -29,38 +29,70 @@ const projects = [
     desc: "Cute expressions and joyful baby moments captured creatively."
   },
   {
+    title: "💑 Engagement Video",
+    link: "https://drive.google.com/file/d/1sEJULFktQEuMu8cKU6b5j2TiuNCpa4f9/view",
+    desc: "Engagement rituals and emotions told cinematically."
+  },
+  {
+    title: "🎂 Birthday Cinematic Video",
+    link: "https://drive.google.com/file/d/1GxuO6HPwqP9S1H2COPYE_xsFCI6ZOs4R/view",
+    desc: "Birthday celebrations turned into a movie-like experience."
+  },
+  {
     title: "💒 Wedding Highlight Film",
     link: "https://drive.google.com/file/d/19UZuhyfy2QRpYNuWPBnFOuxBznqzz_nt/view",
-    desc: "Beautiful cinematic highlights of wedding rituals and emotions."
+    desc: "Best moments of the wedding day captured cinematically."
   },
+  {
+    title: "🎬 Wedding Teaser / Trailer",
+    link: "https://drive.google.com/file/d/1w_1MFqau8ne0Zf2AM87Pv0i84xJI1_8b/view",
+    desc: "Short, impactful teaser to build excitement."
+  },
+  {
+    title: "📅 Save The Date Video",
+    link: "https://drive.google.com/file/d/1me5G6k6ITlsbVdeajW1r8eR_065HYDk5/view",
+    desc: "Creative and stylish wedding date announcement."
+  },
+  {
+    title: "❤️ Reception Video",
+    link: "https://drive.google.com/file/d/1eD8NbBIY0Ykex-rk3i53fUsbRZZOrx3Q/view",
+    desc: "Grand reception moments with cinematic editing."
+  },
+  {
+    title: "🕺💃 Sangeet",
+    link: "https://drive.google.com/file/d/1pczhFo7lLiF4IBB1tIPg-wshlTP_MTjz/view",
+    desc: "Energetic dance performances and fun family moments."
+  },
+  {
+    title: "❤️ Retro",
+    link: "https://drive.google.com/file/d/11k0ttpwDw7BKoWprzOWnr6xeLuIHck8k/view",
+    desc: "Old-school music and visuals with a nostalgic feel."
+  }
 ];
 
-/* ---------------- App Component ---------------- */
 function App() {
   return (
     <div className="App">
 
-      {/* ---------- Navbar ---------- */}
-      <nav className="Navbar" aria-label="Main Navigation">
+      {/* ================= NAVBAR ================= */}
+      <nav className="Navbar">
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      {/* ---------- Home ---------- */}
+      {/* ================= HOME ================= */}
       <header id="home" className="App-header section-bg">
         <div className="logo-container">
           <img
             src="https://i.postimg.cc/xdrrd0Q0/ttt.png"
             alt="Cine Editvala Logo"
             className="App-logo"
-            loading="lazy"
           />
-          <div className="glow"></div>
         </div>
 
-        <h1>Cine Editvala – Cinematic Video Editor</h1>
+        <h1>Cine Editvala</h1>
         <p>
           Video Editing Professional <br />
           Support Engineer <br />
@@ -68,35 +100,35 @@ function App() {
         </p>
       </header>
 
-      {/* ---------- Projects ---------- */}
-      <section id="projects" className="Projects section-bg">
+      {/* ================= PROJECTS ================= */}
+      <section id="projects" className="section-bg">
         <h2>My Projects</h2>
 
         <ul className="projects-list">
           {projects.map((project, index) => (
             <li key={index}>
               <a
-                className="project-link"
                 href={project.link}
+                className="project-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {project.title}
               </a>
-              <p>{project.desc}</p>
+              <p className="project-desc">{project.desc}</p>
             </li>
           ))}
         </ul>
       </section>
 
-      {/* ---------- About ---------- */}
-      <section id="about" className="About section-bg">
+      {/* ================= ABOUT ================= */}
+      <section id="about" className="section-bg">
         <h2>About Me</h2>
 
         <div className="about-wrapper">
           <div className="about-left">
             <p className="about-intro">
-              नमस्कार 👋 मी <strong>Cine Editvala</strong> —
+              नमस्कार 👋 मी <strong>Cine Editvala</strong> —  
               एक Cinematic Video Editor जो visuals मधून emotion आणि story create करतो.
             </p>
             <p className="about-sub">
@@ -125,14 +157,13 @@ function App() {
         </div>
       </section>
 
-      {/* ---------- Contact ---------- */}
-      <section id="contact" className="Contact section-bg">
+      {/* ================= CONTACT ================= */}
+      <section id="contact" className="section-bg Contact">
         <h2>Contact Me</h2>
-
         <ul>
           <li>📧 <a href="mailto:surajkharade000@gmail.com">surajkharade000@gmail.com</a></li>
-          <li>📸 <a href="https://www.instagram.com/cineeditvala" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li>▶️ <a href="https://www.youtube.com/@cineeditvala" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          <li>📸 <a href="https://www.instagram.com/cineeditvala" target="_blank" rel="noreferrer">Instagram</a></li>
+          <li>▶️ <a href="https://www.youtube.com/@cineeditvala" target="_blank" rel="noreferrer">YouTube</a></li>
           <li>📞 <a href="tel:+919767774450">+91 97677 74450</a></li>
         </ul>
       </section>
