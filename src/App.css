@@ -60,9 +60,9 @@ body {
 /* ================= SECTIONS ================= */
 .section-bg {
   padding: 6rem 2rem;
-  text-align: center;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
+  text-align: center;
 }
 
 /* ================= HEADER ================= */
@@ -119,7 +119,19 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: center;
+  align-items: flex-start; /* ONLY projects left */
+}
+
+.projects-list li {
+  width: 100%;
+  text-align: left;
+}
+
+.projects-list li p {
+  margin-top: 8px;
+  max-width: 600px;
+  line-height: 1.6;
+  opacity: 0.85;
 }
 
 .project-link {
@@ -217,5 +229,14 @@ body {
 
   .Navbar {
     gap: 1.5rem;
+  }
+
+  /* Projects mobile */
+  .projects-list {
+    align-items: center;
+  }
+
+  .projects-list li {
+    text-align: center;
   }
 }
