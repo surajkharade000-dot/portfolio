@@ -81,25 +81,25 @@ body {
   text-align: left;
 }
 
-/* Cine Editvala + Logo same line */
 .header-row {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
-.header-row h1 {
+.site-title {
   font-size: 3rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
-/* LOGO — ALWAYS TOP RIGHT */
 .header-logo {
   height: 40px;
   width: auto;
-  opacity: 0.9;
   flex-shrink: 0;
+  margin-left: 16px;
 }
 
 .App-header p {
@@ -204,7 +204,6 @@ body {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
-  /* Header NEVER center */
   .App-header {
     align-items: flex-start;
     text-align: left;
@@ -212,12 +211,16 @@ body {
 
   .header-row {
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-title {
+    font-size: 2.2rem;
   }
 
   .header-logo {
-    height: 34px;
+    height: 32px;
   }
 
   .about-wrapper {
