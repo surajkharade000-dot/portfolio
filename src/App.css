@@ -46,7 +46,7 @@ body {
   padding: 7rem 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Left-aligned content */
+  align-items: flex-start; /* Left-aligned */
   text-align: left;
 }
 
@@ -138,7 +138,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  align-items: flex-start; /* Left-aligned items */
+  align-items: flex-start; /* Left-aligned */
 }
 
 .contact-item {
@@ -163,7 +163,7 @@ body {
 }
 
 .contact-item a:hover {
-  color: #dddddd; /* hover light gray */
+  color: #dddddd; /* light gray hover */
 }
 
 .contact-item a:active {
@@ -190,7 +190,7 @@ body {
   .about-wrapper,
   .contact-wrapper,
   #terms {
-    align-items: center; /* Center on smaller screens */
+    align-items: center; /* Center for small screens */
     text-align: center;
   }
 
