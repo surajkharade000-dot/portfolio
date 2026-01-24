@@ -84,25 +84,24 @@ function App() {
       </nav>
 
       {/* ================= HOME ================= */}
-<header id="home" className="App-header section-bg">
-  <div className="logo-container">
-    <img
-      src="https://i.postimg.cc/bJy3HKYG/logo.png"
-      alt="Cine Editvala Logo"
-      className="App-logo"
-    />
-  </div>
+      <header id="home" className="App-header section-bg">
+        <div className="header-row">
+          <h1 className="site-title">Cine Editvala</h1>
+          <img
+            src="https://i.postimg.cc/bJy3HKYG/logo.png"
+            alt="Cine Editvala Logo"
+            className="header-logo"
+          />
+        </div>
 
-  <h1>Cine Editvala</h1>
-  <p>
-    Cinematic Video Editing | Social Media & Event Films
-  </p>
-</header>
+        <p>
+          Cinematic Video Editing | Social Media & Event Films
+        </p>
+      </header>
 
       {/* ================= PROJECTS ================= */}
       <section id="projects" className="section-bg">
         <h2>My Projects</h2>
-
         <ul className="projects-list">
           {projects.map((project, index) => (
             <li key={index}>
@@ -123,7 +122,6 @@ function App() {
       {/* ================= ABOUT ================= */}
       <section id="about" className="section-bg">
         <h2>About Me</h2>
-
         <div className="about-wrapper">
           <div className="about-left">
             <p className="about-intro">
