@@ -44,16 +44,21 @@ body {
 /* ================= COMMON ================= */
 .section-bg {
   padding: 7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-aligned content */
+  text-align: left;
 }
 
 /* ================= HEADER ================= */
 .App-header {
   padding: 60px 20px;
-  text-align: left; /* Left-aligned header */
   background-color: #0d0d0d;
   color: #f2f2f2;
   display: flex;
   flex-direction: column;
+  align-items: flex-start; /* Left-aligned */
+  text-align: left;
   gap: 20px;
 }
 
@@ -69,11 +74,6 @@ body {
 }
 
 /* ================= PROJECTS ================= */
-#projects h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
 .projects-list {
   list-style: none;
   max-width: 720px;
@@ -81,7 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: flex-start; /* Left-aligned projects */
+  align-items: flex-start; /* Left-aligned */
 }
 
 .project-link {
@@ -102,32 +102,24 @@ body {
 .project-desc {
   margin-top: 8px;
   opacity: 0.75;
+  text-align: left;
 }
 
 /* ================= ABOUT ================= */
-#about h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
 .about-wrapper {
   max-width: 1100px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-}
-
-.about-right {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  justify-items: start; /* Left-aligned boxes */
 }
 
 .about-box {
   padding: 2rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
+  text-align: left;
 }
 
 /* ================= CONTACT ================= */
@@ -139,19 +131,14 @@ body {
   border-radius: 10px;
   color: #f2f2f2;
   line-height: 1.6;
-}
-
-.Contact h2 {
-  font-size: 2rem;
-  margin-bottom: 25px;
-  font-weight: 700;
-  color: #f2f2f2;
+  text-align: left;
 }
 
 .contact-wrapper {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: flex-start; /* Left-aligned items */
 }
 
 .contact-item {
@@ -159,17 +146,18 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   font-size: 1.1rem;
-  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .contact-item span {
   font-weight: 600;
   min-width: 120px;
-  color: #ffffff; /* label white */
+  color: #ffffff;
 }
 
 .contact-item a {
-  color: #ffffff; /* link default white */
+  color: #ffffff; /* default white */
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -191,45 +179,22 @@ body {
   border-radius: 10px;
   color: #f2f2f2;
   line-height: 1.6;
+  text-align: left;
 }
 
-#terms h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-#terms ul {
-  margin-left: 20px;
-  list-style: disc;
-  margin-bottom: 20px;
-}
-
-#terms a {
-  color: #ffcc00; /* Highlighted link color */
-  text-decoration: none;
-}
-
-#terms a:hover {
-  text-decoration: underline;
-}
-
-/* ================= MOBILE ================= */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
+  .section-bg,
+  .App-header,
+  .projects-list,
+  .about-wrapper,
+  .contact-wrapper,
+  #terms {
+    align-items: center; /* Center on smaller screens */
+    text-align: center;
+  }
+
   .about-wrapper {
     grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .projects-list {
-    align-items: center;
-  }
-
-  .contact-wrapper {
-    align-items: center;
-  }
-
-  #terms {
-    text-align: center;
   }
 }
