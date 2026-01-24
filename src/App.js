@@ -156,16 +156,30 @@ function App() {
         </div>
       </section>
 
-      {/* ================= CONTACT ================= */}
-      <section id="contact" className="section-bg Contact">
-        <h2>Contact Me</h2>
-        <ul>
-          <li>📧 <a href="mailto:cineeditvala@gmail.com">Cineeditvala mail</a></li>
-          <li>🅾★ <a href="https://www.instagram.com/cineeditvala" target="_blank" rel="noreferrer">Instagram</a></li>
-          <li>▶ <a href="https://www.youtube.com/@cineeditvala" target="_blank" rel="noreferrer">YouTube</a></li>
-          <li>📞 <a href="tel:+919767774450">Call</a></li>
-        </ul>
-      </section>
+      {{/* ================= CONTACT ================= */}
+<section id="contact" className="section-bg Contact">
+  <h2>Contact Me</h2>
+
+  <div className="contact-wrapper">
+    <div className="contact-item">
+      <span>📧 Email:</span> 
+      <a href="mailto:cineeditvala@gmail.com">cineeditvala@gmail.com</a>
+    </div>
+    <div className="contact-item">
+      <span>📸 Instagram:</span> 
+      <a href="https://www.instagram.com/cineeditvala" target="_blank" rel="noreferrer">Instagram</a>
+    </div>
+    <div className="contact-item">
+      <span>▶ YouTube:</span> 
+      <a href="https://www.youtube.com/@cineeditvala" target="_blank" rel="noreferrer">YouTube</a>
+    </div>
+    <div className="contact-item">
+      <span>📞 Call:</span> 
+      <a href="tel:+919767774450">+91 97677 74450</a>
+    </div>
+  </div>
+</section>
+
 {/* ================= TERMS & CONDITIONS ================= */}
 <section id="terms" className="section-bg">
   <h2>Terms & Conditions</h2>
