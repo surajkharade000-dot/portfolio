@@ -130,7 +130,7 @@ body {
   max-width: 700px;
   margin: 2rem auto;
   padding: 40px 20px;
-  background-color: #1a1a1a; /* Dark professional card */
+  background-color: #1a1a1a; /* Dark background */
   border-radius: 10px;
   color: #f2f2f2;
   line-height: 1.6;
@@ -140,37 +140,43 @@ body {
   font-size: 2rem;
   margin-bottom: 25px;
   font-weight: 700;
+  color: #f2f2f2;
 }
 
 .contact-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* spacing between items */
+  gap: 15px;
 }
 
 .contact-item {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* space between label and link */
+  gap: 10px;
   font-size: 1.1rem;
   align-items: center;
 }
 
 .contact-item span {
-  font-weight: 600; /* label bold */
-  min-width: 120px; /* all labels aligned */
+  font-weight: 600;
+  min-width: 120px;
+  color: #f2f2f2;
 }
 
 .contact-item a {
-  color: #ffcc00;
+  color: #ffffff; /* default white */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-  color: #fff;
-  text-decoration: underline;
+  color: #ffcc00; /* on hover yellow/golden */
 }
+
+.contact-item a:active {
+  color: #00ffff; /* on click active color - cyan for example */
+}
+
 
 
 /* ================= MOBILE ================= */
