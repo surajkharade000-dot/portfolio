@@ -83,7 +83,7 @@ function App() {
         <a href="#terms">Terms</a>
       </nav>
 
-      {      {/* ================= HOME ================= */}
+      {/* ================= HOME ================= */}
 <header id="home" className="App-header section-bg">
   <div className="logo-container">
     <img
