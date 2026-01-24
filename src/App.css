@@ -47,28 +47,27 @@ body {
 }
 
 /* ================= HEADER ================= */
-.App-header {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  width: 120px;
-  margin-bottom: 1.5rem;
+/* Header section */
+.App-header {
+  padding: 60px 20px;
+  text-align: left; /* <-- Left align instead of center */
+  background-color: #0d0d0d; /* optional dark background */
+  color: #f2f2f2;
 }
 
 .App-header h1 {
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .App-header p {
-  opacity: 0.75;
-  line-height: 1.8;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 600px; /* Optional: to avoid too wide text */
 }
+
 
 /* ================= PROJECTS ================= */
 #projects h2 {
