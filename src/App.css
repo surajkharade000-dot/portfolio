@@ -11,9 +11,28 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ================= THEME VARIABLES ================= */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0d0d0d;
+  --card-bg: #f2f2f2;
+  --nav-bg: rgba(255, 255, 255, 0.75);
+  --accent: #ffcc00;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000000;
+    --text-color: #f5f5f7;
+    --card-bg: #1a1a1a;
+    --nav-bg: rgba(0, 0, 0, 0.75);
+  }
+}
+
 body {
-  background: #000;
-  color: #f5f5f7;
+  background: var(--bg-color);
+  color: var(--text-color);
+  padding-top: 70px; /* navbar fixed space */
 }
 
 /* ================= NAVBAR ================= */
@@ -21,7 +40,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.75);
+  background: var(--nav-bg);
   backdrop-filter: blur(20px);
   display: flex;
   justify-content: center;
@@ -31,14 +50,16 @@ body {
 }
 
 .Navbar a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 0.95rem;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
-.Navbar a:hover {
+.Navbar a:hover,
+.Navbar a.active {
   opacity: 1;
+  border-bottom: 2px solid var(--accent);
 }
 
 /* ================= COMMON ================= */
@@ -46,29 +67,38 @@ body {
   padding: 7rem 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Left-aligned */
+  align-items: flex-start;
   text-align: left;
 }
 
 /* ================= HEADER ================= */
 .App-header {
   padding: 60px 20px;
-  background-color: #0d0d0d;
-  color: #f2f2f2;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Left-aligned */
-  text-align: left;
   gap: 20px;
 }
 
-.App-header h1 {
+.header-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-row h1 {
   font-size: 3rem;
   font-weight: 700;
 }
 
+.header-logo {
+  height: 42px;
+  width: auto;
+  opacity: 0.9;
+}
+
 .App-header p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.6;
   max-width: 600px;
 }
@@ -81,28 +111,29 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: flex-start; /* Left-aligned */
+  align-items: flex-start;
 }
 
 .project-link {
   display: inline-block;
   padding: 14px 26px;
-  background: #fff;
-  color: #000;
+  background: var(--text-color);
+  color: var(--bg-color);
   border-radius: 14px;
   text-decoration: none;
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .project-link:hover {
-  background: #ffcc00;
+  background: var(--accent);
   color: #000;
+  transform: translateY(-2px);
 }
 
 .project-desc {
   margin-top: 8px;
   opacity: 0.75;
-  text-align: left;
 }
 
 /* ================= ABOUT ================= */
@@ -112,74 +143,58 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  justify-items: start; /* Left-aligned boxes */
 }
 
 .about-box {
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--card-bg);
   border-radius: 20px;
-  text-align: left;
 }
 
 /* ================= CONTACT ================= */
 .Contact {
-  max-width: 700px;          /* Contact section ची जास्तीत जास्त रुंदी */
-  margin: 2rem 0;            /* LEFT ला ठेवतो (center काढला) */
-  padding: 40px 20px;        /* आतली spacing */
-  background-color: #1a1a1a; /* dark gray background */
-  border-radius: 10px;       /* थोडे गोल कोपरे */
-  color: #f2f2f2;            /* text white */
-  line-height: 1.6;          /* वाचायला सोपं */
-  text-align: left;          /* आतला सगळा text LEFT */
+  max-width: 700px;
+  margin: 2rem 0;
+  padding: 40px 20px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  line-height: 1.6;
 }
 
 .contact-wrapper {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  align-items: flex-start; /* Left-aligned */
 }
 
 .contact-item {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   font-size: 1.1rem;
-  justify-content: flex-start;
-  text-align: left;
 }
 
 .contact-item span {
   font-weight: 600;
   min-width: 120px;
-  color: #ffffff;
 }
 
 .contact-item a {
-  color: #ffffff; /* default white */
+  color: var(--text-color);
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-  color: #dddddd; /* light gray hover */
+  color: var(--accent);
 }
 
-.contact-item a:active {
-  color: #ffcc00; /* golden on click */
-}
-
-/* ================= TERMS & CONDITIONS ================= */
+/* ================= TERMS ================= */
 #terms {
   max-width: 800px;
   margin: 2rem auto;
   padding: 40px 20px;
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  color: #f2f2f2;
+  background: var(--card-bg);
+  border-radius: 12px;
   line-height: 1.6;
-  text-align: left;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -190,11 +205,15 @@ body {
   .about-wrapper,
   .contact-wrapper,
   #terms {
-    align-items: center; /* Center for small screens */
+    align-items: center;
     text-align: center;
   }
 
   .about-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .header-logo {
+    height: 34px;
   }
 }
