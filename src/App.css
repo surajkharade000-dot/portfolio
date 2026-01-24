@@ -47,27 +47,26 @@ body {
 }
 
 /* ================= HEADER ================= */
-/* App.css */
-
-/* Header section */
 .App-header {
   padding: 60px 20px;
-  text-align: left; /* <-- Left align instead of center */
-  background-color: #0d0d0d; /* optional dark background */
+  text-align: left; /* Left-aligned header */
+  background-color: #0d0d0d;
   color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .App-header h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .App-header p {
   font-size: 1.5rem;
   line-height: 1.6;
-  max-width: 600px; /* Optional: to avoid too wide text */
+  max-width: 600px;
 }
-
 
 /* ================= PROJECTS ================= */
 #projects h2 {
@@ -82,6 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: flex-start; /* Left-aligned projects */
 }
 
 .project-link {
@@ -92,6 +92,11 @@ body {
   border-radius: 14px;
   text-decoration: none;
   font-weight: 500;
+}
+
+.project-link:hover {
+  background: #ffcc00;
+  color: #000;
 }
 
 .project-desc {
@@ -130,7 +135,7 @@ body {
   max-width: 700px;
   margin: 2rem auto;
   padding: 40px 20px;
-  background-color: #1a1a1a; /* Dark background */
+  background-color: #1a1a1a;
   border-radius: 10px;
   color: #f2f2f2;
   line-height: 1.6;
@@ -149,10 +154,12 @@ body {
   gap: 15px;
 }
 
-.contact-item a {
-  color: #ffffff; /* default white */
-  text-decoration: none;
-  transition: color 0.3s ease;
+.contact-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 1.1rem;
+  align-items: center;
 }
 
 .contact-item span {
@@ -172,25 +179,15 @@ body {
 }
 
 .contact-item a:active {
-  color: #ffcc00; /* golden while clicking */
+  color: #ffcc00; /* golden on click */
 }
 
-
-
-
-/* ================= MOBILE ================= */
-@media (max-width: 900px) {
-  .about-wrapper {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
 /* ================= TERMS & CONDITIONS ================= */
 #terms {
   max-width: 800px;
   margin: 2rem auto;
   padding: 40px 20px;
-  background-color: #1a1a1a; /* Dark professional background */
+  background-color: #1a1a1a;
   border-radius: 10px;
   color: #f2f2f2;
   line-height: 1.6;
@@ -217,3 +214,22 @@ body {
   text-decoration: underline;
 }
 
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .projects-list {
+    align-items: center;
+  }
+
+  .contact-wrapper {
+    align-items: center;
+  }
+
+  #terms {
+    text-align: center;
+  }
+}
