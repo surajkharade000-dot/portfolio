@@ -149,12 +149,10 @@ body {
   gap: 15px;
 }
 
-.contact-item {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  font-size: 1.1rem;
-  align-items: center;
+.contact-item a {
+  color: #ffffff; /* default white */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .contact-item span {
@@ -170,12 +168,13 @@ body {
 }
 
 .contact-item a:hover {
-  color: #ffcc00; /* on hover yellow/golden */
+  color: #dddddd; /* light gray on hover */
 }
 
 .contact-item a:active {
-  color: #00ffff; /* on click active color - cyan for example */
+  color: #ffcc00; /* golden while clicking */
 }
+
 
 
 
