@@ -83,23 +83,21 @@ function App() {
         <a href="#terms">Terms</a>
       </nav>
 
-      {/* ================= HOME ================= */}
-      <header id="home" className="App-header section-bg">
-        <div className="logo-container">
-          <img
-            src="https://i.postimg.cc/xdrrd0Q0/ttt.png"
-            alt="Cine Editvala Logo"
-            className="App-logo"
-          />
-        </div>
+      {      {/* ================= HOME ================= */}
+<header id="home" className="App-header section-bg">
+  <div className="logo-container">
+    <img
+      src="https://i.postimg.cc/xdrrd0Q0/ttt.png"
+      alt="Cine Editvala Logo"
+      className="App-logo"
+    />
+  </div>
 
-        <h1>Cine Editvala</h1>
-        <p>
-          Video Editing Professional <br />
-          Support Engineer <br />
-          Creative Thinker
-        </p>
-      </header>
+  <h1>Cine Editvala</h1>
+  <p>
+    Cinematic Video Editing | Social Media & Event Films
+  </p>
+</header>
 
       {/* ================= PROJECTS ================= */}
       <section id="projects" className="section-bg">
