@@ -156,27 +156,16 @@ function App() {
         </div>
       </section>
 
-      {/* ================= TERMS & CONDITIONS ================= */}
-<section id="terms" className="section-bg">
-  <h2>Terms & Conditions</h2>
-
-  <p>
-    Welcome to Cine Editvala! By using our website and services, you agree to the following terms and conditions:
-  </p>
-
-  <ul>
-    <li>All video content provided is for personal use unless explicitly licensed for commercial use.</li>
-    <li>Sharing, distributing, or selling any video without permission is strictly prohibited.</li>
-    <li>Project delivery timelines will be communicated beforehand and may vary depending on complexity.</li>
-    <li>Payments for services are required as per the agreed terms before delivery of final files.</li>
-    <li>We reserve the right to make changes to the website, services, or terms at any time without prior notice.</li>
-    <li>By using our services, you accept responsibility for providing accurate information and approvals on time.</li>
-  </ul>
-
-  <p>
-    If you have any questions about these terms, please <a href="#contact">contact us</a>.
-  </p>
-</section>
+            {/* ================= CONTACT ================= */}
+      <section id="contact" className="section-bg Contact">
+        <h2>Contact Me</h2>
+        <ul>
+          <li>📧 <a href="mailto:cineeditvala@gmail.com">Cineeditvala mail</a></li>
+          <li>🅾★ <a href="https://www.instagram.com/cineeditvala" target="_blank" rel="noreferrer">Instagram</a></li>
+          <li>▶ <a href="https://www.youtube.com/@cineeditvala" target="_blank" rel="noreferrer">YouTube</a></li>
+          <li>📞 <a href="tel:+919767774450">Call</a></li>
+        </ul>
+      </section>
 
 {/* ================= TERMS & CONDITIONS ================= */}
 <section id="terms" className="section-bg">
