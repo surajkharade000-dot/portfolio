@@ -156,7 +156,7 @@ function App() {
         </div>
       </section>
 
-      {{/* ================= CONTACT ================= */}
+      {/* ================= CONTACT ================= */}
 <section id="contact" className="section-bg Contact">
   <h2>Contact Me</h2>
 
