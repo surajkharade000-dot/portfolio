@@ -124,14 +124,14 @@ body {
 
 /* ================= CONTACT ================= */
 .Contact {
-  max-width: 700px;
-  margin: 0;
-  padding: 0;
-  background-color: #1a1a1a;
-  border-radius: 0;
-  color: #f2f2f2;
-  line-height: 1.6;
-  text-align: left;
+  max-width: 700px;          /* Contact section ची जास्तीत जास्त रुंदी */
+  margin: 2rem 0;            /* LEFT ला ठेवतो (center काढला) */
+  padding: 40px 20px;        /* आतली spacing */
+  background-color: #1a1a1a; /* dark gray background */
+  border-radius: 10px;       /* थोडे गोल कोपरे */
+  color: #f2f2f2;            /* text white */
+  line-height: 1.6;          /* वाचायला सोपं */
+  text-align: left;          /* आतला सगळा text LEFT */
 }
 
 .contact-wrapper {
