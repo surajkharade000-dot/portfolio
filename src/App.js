@@ -161,7 +161,7 @@ function App() {
       <section id="contact" className="section-bg Contact">
         <h2>Contact Me</h2>
         <ul>
-          <li>✉︎ <a href="mailto:surajkharade000@gmail.com">Cineeditvala mail</a></li>
+          <li>📧 <a href="mailto:cineeditvala@gmail.com">Cineeditvala mail</a></li>
           <li>🅾★ <a href="https://www.instagram.com/cineeditvala" target="_blank" rel="noreferrer">Instagram</a></li>
           <li>▶ <a href="https://www.youtube.com/@cineeditvala" target="_blank" rel="noreferrer">YouTube</a></li>
           <li>📞 <a href="tel:+919767774450">Call</a></li>
