@@ -165,3 +165,35 @@ body {
     text-align: center;
   }
 }
+/* ================= TERMS & CONDITIONS ================= */
+#terms {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 40px 20px;
+  background-color: #1a1a1a; /* Dark professional background */
+  border-radius: 10px;
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+#terms h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#terms ul {
+  margin-left: 20px;
+  list-style: disc;
+  margin-bottom: 20px;
+}
+
+#terms a {
+  color: #ffcc00; /* Highlighted link color */
+  text-decoration: none;
+}
+
+#terms a:hover {
+  text-decoration: underline;
+}
+
