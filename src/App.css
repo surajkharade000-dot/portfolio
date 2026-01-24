@@ -127,34 +127,49 @@ body {
 
 /* ================= CONTACT ================= */
 .Contact {
-  text-align: center;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 40px 20px;
+  background-color: #1a1a1a; /* Dark professional card */
+  border-radius: 10px;
+  color: #f2f2f2;
+  line-height: 1.6;
 }
 
 .Contact h2 {
-  color: #ffffff;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 700;
 }
 
-.Contact ul {
-  list-style: none;
-  padding: 0;
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* spacing between items */
 }
 
-.Contact li {
-  margin: 0.9rem 0;
-  color: #ffffff; /* icon + text white */
-  font-size: 1rem;
+.contact-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* space between label and link */
+  font-size: 1.1rem;
+  align-items: center;
 }
 
-.Contact a {
-  color: #ffffff; /* links white */
+.contact-item span {
+  font-weight: 600; /* label bold */
+  min-width: 120px; /* all labels aligned */
+}
+
+.contact-item a {
+  color: #ffcc00;
   text-decoration: none;
-  opacity: 1; /* full white */
-  transition: opacity 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.Contact a:hover {
-  opacity: 0.8; /* hover effect */
+.contact-item a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 
